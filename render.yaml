@@ -2,12 +2,12 @@ services:
   - type: web
     name: market-signal-app
     env: python
-    buildCommand: pip install -r requirements.txt
+    buildCommand: pip install --upgrade pip && pip install -r requirements.txt
     startCommand: streamlit run app.py --server.port $PORT --server.address 0.0.0.0
 
 cronJobs:
   - name: market-signal-pipeline
     env: python
-    buildCommand: pip install -r requirements.txt
+    buildCommand: pip install --upgrade pip && pip install -r requirements.txt
     startCommand: python run_pipeline.py
-    schedule: "0 * * * *"  # every 1 hour
+    schedule: "0 * * * *"
