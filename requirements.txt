@@ -1,0 +1,20 @@
+# ===== Core Data Processing =====
+pandas==2.2.2
+numpy==1.26.4
+tqdm==4.66.4
+
+# ===== Financial Data APIs =====
+yfinance==0.2.66
+requests==2.32.3
+
+# ===== Visualization =====
+plotly==5.23.0
+streamlit==1.39.0
+
+# ===== Utility / Web =====
+lxml==5.2.2
+beautifulsoup4==4.12.3
+
+# ===== Optional: for stability in deployment =====
+setuptools>=70.0.0
+wheel>=0.44.0
