@@ -32,3 +32,9 @@ jobs:
           git add signals.json market_data.json || true
           git commit -m "Automated pipeline update" || echo "No changes to commit"
           git push
+
+      - name: Trigger Render redeploy
+        run: |
+          curl -X POST "https://api.render.com/v1/services/srv-d3ot9563jp1c739ntr10/deploys" \
+          -H "Accept: application/json" \
+          -H "Authorization: Bearer ${{ secrets.RENDER_API_KEY }}"
