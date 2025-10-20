@@ -1,5 +1,5 @@
 {
-  "analysis_time": "2025-10-20T10:39:01.034357",
+  "analysis_time": "2025-10-20T06:57:30.668934",
   "indices": {
     "NIFTY_50": {
       "basic_data": {
@@ -109,22 +109,23 @@
     "SENSEX": {
       "basic_data": {
         "symbol": "^BSESN",
-        "current_price": 84413.44,
-        "daily_change": 0.55,
-        "weekly_change": 2.32,
-        "monthly_change": 2.71,
+        "current_price": 83952.19,
+        "daily_change": 0.58,
+        "weekly_change": 2.17,
+        "monthly_change": 1.48,
         "volume": {
-          "current": 0,
-          "average_20d": 13025,
-          "ratio": 0.0
+          "current": 14300,
+          "average_20d": 13510,
+          "ratio": 1.06
         },
         "price_levels": {
-          "high_52w": 84656.56,
+          "high_52w": 84172.24,
           "low_52w": 79741.76,
-          "distance_from_high": -0.29,
-          "distance_from_low": 5.86
+          "distance_from_high": -0.26,
+          "distance_from_low": 5.28
         },
         "historical_closes": [
+          82726.64,
           82184.17,
           81463.09,
           80891.02,
@@ -183,8 +184,7 @@
           82029.98,
           82605.43,
           83467.66,
-          83952.19,
-          84413.44
+          83952.19
         ],
         "sentiment": 0
       },
@@ -193,8 +193,8 @@
       "technical_indicators": {
         "signal": "NEUTRAL",
         "score": 0,
-        "rsi": 86.86,
-        "sma_20": 81967.3,
+        "rsi": 84.63,
+        "sma_20": 81877.94,
         "technical_summary": {
           "price_above_ma": "True",
           "rsi_status": "Overbought",
@@ -205,8 +205,8 @@
       "recommendation": {
         "action": "HOLD",
         "adjustment": "Maintain current position",
-        "target_price": 84413.44,
-        "stop_loss": 80327.95,
+        "target_price": 83952.19,
+        "stop_loss": 80240.38,
         "confidence": "Low",
         "rationale": "Mixed technical signals"
       }
@@ -1703,5 +1703,6 @@
         "rationale": "Mixed technical signals"
       }
     }
-  }
+  },
+  "last_run": "2025-10-20T06:57:30.721107"
 }
