@@ -2,15 +2,15 @@ Name,Type,Signal,Action,Confidence,Projects,Rationale
 NIFTY_50,Indices,NEUTRAL,HOLD,Low,0,Mixed technical signals
 SENSEX,Indices,NEUTRAL,HOLD,Low,0,Mixed technical signals
 BANK_NIFTY,Sectors,NEUTRAL,HOLD,Low,0,Mixed technical signals
-NIFTY_IT,Sectors,NEUTRAL,HOLD,Low,0,Mixed technical signals
+NIFTY_IT,Sectors,NEUTRAL,HOLD,Medium,0,Mixed technical signals
 NIFTY_PHARMA,Sectors,NEUTRAL,HOLD,Low,0,Mixed technical signals
 NIFTY_AUTO,Sectors,NEUTRAL,HOLD,Low,1,Mixed technical signals
 NIFTY_FMCG,Sectors,NEUTRAL,HOLD,Medium,0,Mixed technical signals
 HDFCBANK,Stocks,NEUTRAL,HOLD,Low,0,Mixed technical signals
 INFY,Stocks,NEUTRAL,HOLD,Low,0,Mixed technical signals
-RELIANCE,Stocks,NEUTRAL,HOLD,Medium,0,Mixed technical signals
-TCS,Stocks,NEUTRAL,HOLD,Low,0,Mixed technical signals
-ICICIBANK,Stocks,NEUTRAL,HOLD,Medium,0,Mixed technical signals
+RELIANCE,Stocks,BULLISH,BUY,Medium,1,Weekly gain of 2.8%; 1 opportunity signals detected
+TCS,Stocks,NEUTRAL,HOLD,Medium,0,Mixed technical signals
+ICICIBANK,Stocks,NEUTRAL,HOLD,Low,0,Mixed technical signals
 ITC,Stocks,NEUTRAL,HOLD,Medium,0,Mixed technical signals
 SBIN,Stocks,NEUTRAL,HOLD,Medium,0,Mixed technical signals
 LT,Stocks,NEUTRAL,HOLD,Low,0,Mixed technical signals
