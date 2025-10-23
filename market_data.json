@@ -664,9 +664,9 @@
         "ratio": 0.24
       },
       "price_levels": {
-        "high_52w": 1582.0,
+        "high_52w": 1555.0,
         "low_52w": 1414.0,
-        "distance_from_high": -6.93,
+        "distance_from_high": -5.31,
         "distance_from_low": 4.13
       },
       "historical_closes": [
@@ -1301,6 +1301,6 @@
       "sentiment": 0
     }
   },
-  "fetch_time": "2025-10-22T06:30:53.682365",
-  "last_run": "2025-10-22T06:31:05.174412"
+  "fetch_time": "2025-10-23T06:29:40.369883",
+  "last_run": "2025-10-23T06:29:53.446938"
 }

@@ -1,5 +1,5 @@
 {
-  "analysis_time": "2025-10-22T06:31:05.128775",
+  "analysis_time": "2025-10-23T06:29:53.401967",
   "indices": {
     "NIFTY_50": {
       "basic_data": {
@@ -864,9 +864,9 @@
           "ratio": 0.24
         },
         "price_levels": {
-          "high_52w": 1582.0,
+          "high_52w": 1555.0,
           "low_52w": 1414.0,
-          "distance_from_high": -6.93,
+          "distance_from_high": -5.31,
           "distance_from_low": 4.13
         },
         "historical_closes": [
@@ -1704,5 +1704,5 @@
       }
     }
   },
-  "last_run": "2025-10-22T06:31:05.174412"
+  "last_run": "2025-10-23T06:29:53.446938"
 }
