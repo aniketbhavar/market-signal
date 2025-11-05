@@ -11,10 +11,18 @@ requests==2.32.3
 plotly==5.23.0
 streamlit==1.39.0
 
+# ===== Google Gemini AI =====
+google-generativeai==0.7.2
+google-api-core==2.19.1
+protobuf==5.28.0
+
 # ===== Utility / Web =====
 lxml==5.2.2
 beautifulsoup4==4.12.3
 
-# ===== Optional: for stability in deployment =====
+# ===== Deployment Stability =====
 setuptools>=70.0.0
 wheel>=0.44.0
+
+# ===== Optional (for Render and cron use) =====
+schedule==1.2.1
