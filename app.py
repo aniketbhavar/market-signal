@@ -7,11 +7,20 @@ from datetime import datetime
 # Page setup
 st.set_page_config(page_title="Market Signal POC", page_icon="📊", layout="wide")
 
+# --- LOAD DATA ---
 @st.cache_data
 def load_data():
-    with open('signals.json', 'r') as f:
-        return json.load(f)
+    """
+    Try loading AI-enriched data first; if not found, fall back to basic signals.json.
+    """
+    try:
+        with open('signals_enriched.json', 'r') as f:
+            return json.load(f)
+    except FileNotFoundError:
+        with open('signals.json', 'r') as f:
+            return json.load(f)
 
+# --- VISUALIZATION HELPERS ---
 def create_performance_chart(data, entity_type):
     """Bar chart showing weekly change by signal type"""
     items = []
@@ -85,14 +94,21 @@ def main():
     try:
         data = load_data()
     except FileNotFoundError:
-        st.error("⚠️ Please run Day 1 (Data_Ingestion.py) and Day 2 (signal_analysis.py) first.")
+        st.error("⚠️ Please run Day 1 (Data_Ingestion.py), Day 2 (signal_analysis.py), and future_prediction.py first.")
         return
 
-    # Sidebar
+    # Sidebar Navigation
     st.sidebar.header("📋 Navigation")
     view_type = st.sidebar.radio(
         "Select View",
-        ["Overview", "Indices", "Sectors", "Stocks", "Detailed Analysis"]
+        [
+            "Overview",
+            "Indices",
+            "Sectors",
+            "Stocks",
+            "Detailed Analysis",
+            "Future Predictions"  # 👈 New Tab
+        ]
     )
 
     if st.sidebar.button("🔄 Refresh Data"):
@@ -100,13 +116,14 @@ def main():
         st.rerun()
 
     st.sidebar.markdown("---")
-    st.sidebar.markdown(f"**Last Updated:**  \n{datetime.fromisoformat(data['analysis_time']).strftime('%Y-%m-%d %H:%M:%S')}")
+    if "analysis_time" in data:
+        st.sidebar.markdown(f"**Last Updated:**  \n{datetime.fromisoformat(data['analysis_time']).strftime('%Y-%m-%d %H:%M:%S')}")
 
     # CSV filename with timestamp
     timestamp = datetime.now().strftime("%Y-%m-%d_%I-%M%p")
     file_name = f"market_signals_{timestamp}.csv"
 
-    # --- VIEWS ---
+    # --- VIEW SECTIONS ---
     if view_type == "Overview":
         all_items = list(data.get('indices', {}).values()) + \
                     list(data.get('sectors', {}).values()) + \
@@ -157,7 +174,7 @@ def main():
         st.data_editor(df, use_container_width=True, hide_index=True, height=600)
         st.download_button("📥 Download CSV", df.to_csv(index=False), file_name, "text/csv")
 
-    else:  # Detailed Analysis
+    elif view_type == "Detailed Analysis":
         st.subheader("🔍 Detailed Entity Analysis")
 
         entity_type = st.selectbox("Select Type", ["Indices", "Sectors", "Stocks"])
@@ -197,11 +214,81 @@ def main():
         col2.metric("20-day SMA", f"₹{tech['sma_20']:,.2f}")
         col3.metric("Score", tech['score'])
 
+        # --- AI Future Outlook (Optional inline display) ---
+        if "future_outlook" in analysis:
+            outlook = analysis["future_outlook"]
+            st.markdown("### 🤖 AI Future Outlook (Gemini 1.5 Flash)")
+            st.markdown(f"""
+            **Prediction:** {outlook.get('prediction', 'N/A')}  
+            **Expected Change:** {outlook.get('expected_change', 'N/A')}  
+            **Confidence:** {outlook.get('confidence', 'N/A')}  
+            **Reasoning:** {outlook.get('reasoning', 'N/A')}
+            """)
+
         if analysis['projects']:
             st.markdown("### 🎯 Detected Projects")
             display_projects(analysis['projects'])
         else:
             st.info("No opportunity projects detected for this entity.")
+
+    # --- NEW VIEW: AI Future Predictions ---
+    # === Future Predictions View ===
+    elif view_type == "Future Predictions":
+        st.subheader("🤖 AI-Based Future Outlook (Next 6 to 12 Months)")
+        st.markdown(
+            "This section displays Gemini 2.0 Flash-Lite generated forecasts for each stock — "
+            "including 6-month and 12-month expected changes, confidence levels, and reasoning."
+        )
+
+        if "stocks" not in data:
+            st.warning("No stock data found. Please run Data_Ingestion.py, signal_analysis.py, and future_prediction.py first.")
+        else:
+            rows = []
+
+            for name, analysis in data["stocks"].items():
+                outlook = analysis.get("future_outlook", {})
+
+                # Parse JSON if stored as a string
+                if isinstance(outlook, str):
+                    try:
+                        outlook = json.loads(outlook)
+                    except Exception:
+                        outlook = {"prediction": "Neutral", "expected_change_6m": "0%", "expected_change_1y": "0%", "confidence": "Low", "reasoning": outlook}
+
+                reasoning = outlook.get("reasoning", "")
+                short_reason = reasoning[:120] + "..." if len(reasoning) > 120 else reasoning
+
+                rows.append({
+                    "Name": name,
+                    "Prediction": outlook.get("prediction", "Neutral"),
+                    "6-Month Change": outlook.get("expected_change_6m", "0%"),
+                    "1-Year Change": outlook.get("expected_change_1y", "0%"),
+                    "Confidence": outlook.get("confidence", "Low"),
+                    "Short Reasoning": short_reason,
+                    "Full Reasoning": reasoning
+                })
+
+            df = pd.DataFrame(rows)
+
+            st.markdown("### 📈 Summary Table")
+            st.dataframe(
+                df[["Name", "Prediction", "6-Month Change", "1-Year Change", "Confidence", "Short Reasoning"]],
+                use_container_width=True,
+                height=500,
+            )
+
+            # --- Detailed reasoning viewer ---
+            st.markdown("---")
+            st.markdown("### 🧩 Detailed Reasoning Explorer")
+            selected_stock = st.selectbox("Select a stock to view full reasoning", [""] + df["Name"].tolist())
+            if selected_stock:
+                full_reasoning = df.loc[df["Name"] == selected_stock, "Full Reasoning"].values[0]
+                st.markdown(f"**{selected_stock} — Full AI Reasoning:**")
+                st.write(full_reasoning if full_reasoning else "No detailed reasoning available.")
+
+        st.markdown("---")
+        st.caption("🕒 Last updated: " + str(data.get("forecast_time", "N/A")))
+
 
 if __name__ == "__main__":
     main()
