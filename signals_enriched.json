@@ -849,6 +849,13 @@
         "stop_loss": 972.18,
         "confidence": "Low",
         "rationale": "Mixed technical signals"
+      },
+      "future_outlook": {
+        "prediction": "Neutral",
+        "expected_change_6m": "-2% to +5%",
+        "expected_change_1y": "+2% to +10%",
+        "confidence": "Low",
+        "reasoning": "The technical summary indicates a neutral signal with a recent negative weekly change, however, the RSI is relatively neutral. The lack of significant news suggests the stock might trade sideways. The absence of catalysts limits potential price movement, therefore a neutral outlook is given."
       }
     },
     "INFY": {
@@ -954,6 +961,13 @@
         "stop_loss": 1459.2,
         "confidence": "Medium",
         "rationale": "Mixed technical signals"
+      },
+      "future_outlook": {
+        "prediction": "Neutral",
+        "expected_change_6m": "-5% to +5%",
+        "expected_change_1y": "0% to +10%",
+        "confidence": "Low",
+        "reasoning": "The technical summary indicates a neutral signal with recent negative price movement. The RSI is close to neutral territory. The lack of significant news suggests the stock may trade sideways in the short term, with a potential for modest gains over a year, dependent on broader market conditions and sector performance."
       }
     },
     "RELIANCE": {
@@ -1059,6 +1073,13 @@
         "stop_loss": 1405.9,
         "confidence": "Low",
         "rationale": "Mixed technical signals"
+      },
+      "future_outlook": {
+        "prediction": "Neutral",
+        "expected_change_6m": "-2% to +5%",
+        "expected_change_1y": "0% to +10%",
+        "confidence": "Low",
+        "reasoning": "The technical summary indicates a neutral signal and a high RSI, suggesting potential for consolidation or a slight pullback. The lack of recent news provides limited catalysts for significant price movement. Given the mixed signals, a conservative outlook is warranted."
       }
     },
     "TCS": {
@@ -1164,6 +1185,13 @@
         "stop_loss": 2960.58,
         "confidence": "Medium",
         "rationale": "Mixed technical signals"
+      },
+      "future_outlook": {
+        "prediction": "Neutral",
+        "expected_change_6m": "-2% to +5%",
+        "expected_change_1y": "0% to +10%",
+        "confidence": "Medium",
+        "reasoning": "The technical summary indicates a neutral signal and a recent negative weekly change. The RSI suggests neither overbought nor oversold conditions. Absence of significant news flow suggests a period of consolidation. The stock may trend sideways or show modest growth in the absence of new catalysts."
       }
     },
     "ICICIBANK": {
@@ -1269,6 +1297,13 @@
         "stop_loss": 1349.19,
         "confidence": "Medium",
         "rationale": "Mixed technical signals"
+      },
+      "future_outlook": {
+        "prediction": "Neutral",
+        "expected_change_6m": "-5% to +5%",
+        "expected_change_1y": "0% to +10%",
+        "confidence": "Medium",
+        "reasoning": "The technical summary indicates a neutral signal with a recent negative weekly change and a low RSI. Lack of significant news flow suggests a period of consolidation. The stock may experience modest fluctuations within a narrow range over the next six months, with a slightly more positive outlook over the longer term if market conditions remain stable."
       }
     },
     "ITC": {
@@ -1374,6 +1409,13 @@
         "stop_loss": 401.61,
         "confidence": "Medium",
         "rationale": "Mixed technical signals"
+      },
+      "future_outlook": {
+        "prediction": "Neutral",
+        "expected_change_6m": "-3% to +5%",
+        "expected_change_1y": "0% to +10%",
+        "confidence": "Medium",
+        "reasoning": "The technical summary indicates a neutral signal and a recent negative weekly change. The RSI suggests the stock is neither overbought nor oversold. Lacking significant news flow limits a strong directional bias, leading to a cautiously optimistic outlook. However, the lack of positive catalysts suggests limited upside potential."
       }
     },
     "SBIN": {
@@ -1485,6 +1527,13 @@
         "stop_loss": 886.44,
         "confidence": "Low",
         "rationale": "Mixed technical signals"
+      },
+      "future_outlook": {
+        "prediction": "Neutral",
+        "expected_change_6m": "0% to +5%",
+        "expected_change_1y": "+5% to +10%",
+        "confidence": "Medium",
+        "reasoning": "The technical signal is neutral, suggesting consolidation. The high RSI indicates the stock may be overbought in the short term, potentially leading to a pullback. With no significant news catalysts, growth is likely to be moderate in the coming year."
       }
     },
     "LT": {
@@ -1590,6 +1639,13 @@
         "stop_loss": 3793.52,
         "confidence": "Low",
         "rationale": "Mixed technical signals"
+      },
+      "future_outlook": {
+        "prediction": "Neutral",
+        "expected_change_6m": "-2% to +5%",
+        "expected_change_1y": "0% to +10%",
+        "confidence": "Low",
+        "reasoning": "The technical summary indicates a neutral signal and a high RSI, suggesting the stock might be slightly overbought and could consolidate. The absence of recent news provides little to drive significant price movement. Without any catalysts or negative news, a moderate and uncertain outlook is predicted."
       }
     },
     "AXISBANK": {
@@ -1695,8 +1751,16 @@
         "stop_loss": 1190.34,
         "confidence": "Low",
         "rationale": "Mixed technical signals"
+      },
+      "future_outlook": {
+        "prediction": "Neutral",
+        "expected_change_6m": "-3% to +5%",
+        "expected_change_1y": "0% to +10%",
+        "confidence": "Low",
+        "reasoning": "The technical summary indicates a neutral signal with a recent negative weekly change, however the RSI of 65.58 is relatively neutral suggesting a possibility of some upward movement. The lack of recent news and a neutral overall score contributes to low confidence in predicting any significant directional change."
       }
     }
   },
+  "forecast_time": "2025-11-05T03:15:00.747850",
   "last_run": "2025-11-05T03:15:02.812208"
 }
