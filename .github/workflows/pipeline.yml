@@ -2,8 +2,8 @@ name: Market Signal Auto Pipeline
 
 on:
   schedule:
-    - cron: "0 6 * * *"   # every  day (UTC)
-  workflow_dispatch:       # allows manual trigger
+    - cron: "0 6 * * *"   # every day at 6 AM UTC
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -16,7 +16,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GH_TOKEN }}   # ✅ use your GitHub token here
+          token: ${{ secrets.GH_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -28,17 +28,19 @@ jobs:
           pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run the pipeline
+      - name: Run the pipeline with Gemini AI
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}  # 👈 your Gemini API key (from GitHub Secrets)
         run: python run_pipeline.py
 
       - name: Commit and push updates
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}  # ✅ match the name
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add signals.json market_data.json || true
-          git commit -m "Automated pipeline update" || echo "No changes to commit"
+          git add signals.json signals_enriched.json market_data.json || true
+          git commit -m "Automated pipeline update with AI predictions" || echo "No changes to commit"
           git push https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git HEAD:main
 
       - name: Trigger Render redeploy
