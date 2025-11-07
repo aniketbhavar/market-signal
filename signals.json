@@ -1,26 +1,25 @@
 {
-  "analysis_time": "2025-11-06T06:31:29.848838",
+  "analysis_time": "2025-11-07T06:31:24.797655",
   "indices": {
     "NIFTY_50": {
       "basic_data": {
         "symbol": "^NSEI",
-        "current_price": 25597.65,
-        "daily_change": -0.64,
-        "weekly_change": -1.42,
-        "monthly_change": 5.07,
+        "current_price": 25509.7,
+        "daily_change": -0.34,
+        "weekly_change": -1.64,
+        "monthly_change": 3.76,
         "volume": {
-          "current": 305100,
-          "average_20d": 281315,
-          "ratio": 1.08
+          "current": 371900,
+          "average_20d": 285510,
+          "ratio": 1.3
         },
         "price_levels": {
           "high_52w": 26104.2,
-          "low_52w": 24337.5,
-          "distance_from_high": -1.94,
-          "distance_from_low": 5.18
+          "low_52w": 24347.45,
+          "distance_from_high": -2.28,
+          "distance_from_low": 4.77
         },
         "historical_closes": [
-          24363.3,
           24585.05,
           24487.4,
           24619.35,
@@ -78,7 +77,8 @@
           25877.85,
           25722.1,
           25763.35,
-          25597.65
+          25597.65,
+          25509.7
         ],
         "sentiment": 0
       },
@@ -86,11 +86,11 @@
       "signal": "NEUTRAL",
       "technical_indicators": {
         "signal": "NEUTRAL",
-        "score": 1,
-        "rsi": 63.3,
-        "sma_20": 25596.43,
+        "score": -1,
+        "rsi": 55.78,
+        "sma_20": 25616.5,
         "technical_summary": {
-          "price_above_ma": "True",
+          "price_above_ma": "False",
           "rsi_status": "Neutral",
           "volume_status": "Normal"
         }
@@ -99,8 +99,8 @@
       "recommendation": {
         "action": "HOLD",
         "adjustment": "Maintain current position",
-        "target_price": 25597.65,
-        "stop_loss": 25084.5,
+        "target_price": 25509.7,
+        "stop_loss": 25104.17,
         "confidence": "Low",
         "rationale": "Mixed technical signals"
       }
@@ -108,23 +108,22 @@
     "SENSEX": {
       "basic_data": {
         "symbol": "^BSESN",
-        "current_price": 83459.15,
-        "daily_change": -0.62,
+        "current_price": 83311.01,
+        "daily_change": -0.18,
         "weekly_change": -1.56,
-        "monthly_change": 4.51,
+        "monthly_change": 3.36,
         "volume": {
-          "current": 9500,
-          "average_20d": 13515,
-          "ratio": 0.7
+          "current": 17900,
+          "average_20d": 13715,
+          "ratio": 1.31
         },
         "price_levels": {
           "high_52w": 85290.06,
           "low_52w": 79741.76,
-          "distance_from_high": -2.15,
-          "distance_from_low": 4.66
+          "distance_from_high": -2.32,
+          "distance_from_low": 4.48
         },
         "historical_closes": [
-          79857.79,
           80604.08,
           80235.59,
           80539.91,
@@ -182,7 +181,8 @@
           84404.46,
           83938.71,
           83978.49,
-          83459.15
+          83459.15,
+          83311.01
         ],
         "sentiment": 0
       },
@@ -191,8 +191,8 @@
       "technical_indicators": {
         "signal": "NEUTRAL",
         "score": -1,
-        "rsi": 62.82,
-        "sma_20": 83524.93,
+        "rsi": 56.85,
+        "sma_20": 83594.14,
         "technical_summary": {
           "price_above_ma": "False",
           "rsi_status": "Neutral",
@@ -203,8 +203,8 @@
       "recommendation": {
         "action": "HOLD",
         "adjustment": "Maintain current position",
-        "target_price": 83459.15,
-        "stop_loss": 81854.43,
+        "target_price": 83311.01,
+        "stop_loss": 81922.26,
         "confidence": "Low",
         "rationale": "Mixed technical signals"
       }
@@ -214,23 +214,22 @@
     "BANK_NIFTY": {
       "basic_data": {
         "symbol": "^NSEBANK",
-        "current_price": 57827.05,
+        "current_price": 57554.25,
         "daily_change": -0.47,
-        "weekly_change": -0.49,
-        "monthly_change": 5.13,
+        "weekly_change": -1.13,
+        "monthly_change": 3.68,
         "volume": {
-          "current": 168600,
-          "average_20d": 166685,
-          "ratio": 1.01
+          "current": 170400,
+          "average_20d": 167520,
+          "ratio": 1.02
         },
         "price_levels": {
           "high_52w": 58577.5,
           "low_52w": 53561.75,
-          "distance_from_high": -1.28,
-          "distance_from_low": 7.96
+          "distance_from_high": -1.75,
+          "distance_from_low": 7.45
         },
         "historical_closes": [
-          55004.9,
           55510.75,
           55043.7,
           55181.45,
@@ -288,7 +287,8 @@
           58031.1,
           57776.35,
           58101.45,
-          57827.05
+          57827.05,
+          57554.25
         ],
         "sentiment": 0
       },
@@ -297,8 +297,8 @@
       "technical_indicators": {
         "signal": "NEUTRAL",
         "score": 1,
-        "rsi": 67.03,
-        "sma_20": 57419.21,
+        "rsi": 59.73,
+        "sma_20": 57484.96,
         "technical_summary": {
           "price_above_ma": "True",
           "rsi_status": "Neutral",
@@ -309,8 +309,8 @@
       "recommendation": {
         "action": "HOLD",
         "adjustment": "Maintain current position",
-        "target_price": 57827.05,
-        "stop_loss": 56270.83,
+        "target_price": 57554.25,
+        "stop_loss": 56335.26,
         "confidence": "Low",
         "rationale": "Mixed technical signals"
       }
@@ -318,23 +318,22 @@
     "NIFTY_IT": {
       "basic_data": {
         "symbol": "^CNXIT",
-        "current_price": 35274.55,
-        "daily_change": -1.06,
-        "weekly_change": -2.37,
-        "monthly_change": 2.55,
+        "current_price": 35337.6,
+        "daily_change": 0.18,
+        "weekly_change": -1.46,
+        "monthly_change": 2.3,
         "volume": {
-          "current": 23000,
-          "average_20d": 26440,
-          "ratio": 0.87
+          "current": 25100,
+          "average_20d": 26645,
+          "ratio": 0.94
         },
         "price_levels": {
           "high_52w": 37064.95,
           "low_52w": 33432.1,
-          "distance_from_high": -4.83,
-          "distance_from_low": 5.51
+          "distance_from_high": -4.66,
+          "distance_from_low": 5.7
         },
         "historical_closes": [
-          34398.5,
           34544.65,
           34674.3,
           34692.95,
@@ -392,7 +391,8 @@
           35906.4,
           35712.35,
           35653.1,
-          35274.55
+          35274.55,
+          35337.6
         ],
         "sentiment": 0
       },
@@ -400,9 +400,9 @@
       "signal": "NEUTRAL",
       "technical_indicators": {
         "signal": "NEUTRAL",
-        "score": -2,
-        "rsi": 50.84,
-        "sma_20": 35544.59,
+        "score": -1,
+        "rsi": 49.07,
+        "sma_20": 35576.0,
         "technical_summary": {
           "price_above_ma": "False",
           "rsi_status": "Neutral",
@@ -413,32 +413,31 @@
       "recommendation": {
         "action": "HOLD",
         "adjustment": "Maintain current position",
-        "target_price": 35274.55,
-        "stop_loss": 34833.7,
-        "confidence": "Medium",
+        "target_price": 35337.6,
+        "stop_loss": 34864.48,
+        "confidence": "Low",
         "rationale": "Mixed technical signals"
       }
     },
     "NIFTY_PHARMA": {
       "basic_data": {
         "symbol": "^CNXPHARMA",
-        "current_price": 22334.45,
-        "daily_change": -0.48,
-        "weekly_change": 0.11,
-        "monthly_change": 4.36,
+        "current_price": 22250.55,
+        "daily_change": -0.38,
+        "weekly_change": -0.0,
+        "monthly_change": 2.99,
         "volume": {
-          "current": 22298300,
-          "average_20d": 18074875,
-          "ratio": 1.23
+          "current": 35755100,
+          "average_20d": 19090720,
+          "ratio": 1.87
         },
         "price_levels": {
           "high_52w": 22716.9,
           "low_52w": 21324.05,
-          "distance_from_high": -1.68,
-          "distance_from_low": 4.74
+          "distance_from_high": -2.05,
+          "distance_from_low": 4.34
         },
         "historical_closes": [
-          21402.15,
           21604.65,
           21753.5,
           22130.3,
@@ -496,7 +495,8 @@
           22298.2,
           22175.4,
           22442.6,
-          22334.45
+          22334.45,
+          22250.55
         ],
         "sentiment": 0
       },
@@ -504,51 +504,44 @@
       "signal": "NEUTRAL",
       "technical_indicators": {
         "signal": "NEUTRAL",
-        "score": 1,
-        "rsi": 59.51,
-        "sma_20": 22221.63,
+        "score": 2,
+        "rsi": 55.97,
+        "sma_20": 22240.39,
         "technical_summary": {
           "price_above_ma": "True",
           "rsi_status": "Neutral",
-          "volume_status": "Normal"
+          "volume_status": "High"
         }
       },
-      "projects": [
-        {
-          "type": "TECHNICAL_BREAKOUT",
-          "description": "Breaking above 52W high of \u20b922,716.90",
-          "confidence": "Medium"
-        }
-      ],
+      "projects": [],
       "recommendation": {
         "action": "HOLD",
         "adjustment": "Maintain current position",
-        "target_price": 22334.45,
-        "stop_loss": 21777.2,
-        "confidence": "Low",
+        "target_price": 22250.55,
+        "stop_loss": 21795.58,
+        "confidence": "Medium",
         "rationale": "Mixed technical signals"
       }
     },
     "NIFTY_AUTO": {
       "basic_data": {
         "symbol": "^CNXAUTO",
-        "current_price": 26610.05,
-        "daily_change": -0.86,
-        "weekly_change": -2.4,
-        "monthly_change": 13.36,
+        "current_price": 26626.5,
+        "daily_change": 0.06,
+        "weekly_change": -1.92,
+        "monthly_change": 12.24,
         "volume": {
-          "current": 399300,
-          "average_20d": 461475,
-          "ratio": 0.87
+          "current": 464000,
+          "average_20d": 460365,
+          "ratio": 1.01
         },
         "price_levels": {
           "high_52w": 27725.75,
-          "low_52w": 23439.05,
-          "distance_from_high": -4.02,
-          "distance_from_low": 13.53
+          "low_52w": 23440.2,
+          "distance_from_high": -3.96,
+          "distance_from_low": 13.59
         },
         "historical_closes": [
-          23474.65,
           23723.75,
           23856.6,
           24122.65,
@@ -606,7 +599,8 @@
           26829.55,
           26809.85,
           26841.8,
-          26610.05
+          26610.05,
+          26626.5
         ],
         "sentiment": 0
       },
@@ -614,9 +608,9 @@
       "signal": "NEUTRAL",
       "technical_indicators": {
         "signal": "NEUTRAL",
-        "score": -2,
-        "rsi": 49.09,
-        "sma_20": 26914.19,
+        "score": -1,
+        "rsi": 47.46,
+        "sma_20": 26898.84,
         "technical_summary": {
           "price_above_ma": "False",
           "rsi_status": "Neutral",
@@ -627,32 +621,31 @@
       "recommendation": {
         "action": "HOLD",
         "adjustment": "Maintain current position",
-        "target_price": 26610.05,
-        "stop_loss": 26375.91,
-        "confidence": "Medium",
+        "target_price": 26626.5,
+        "stop_loss": 26360.86,
+        "confidence": "Low",
         "rationale": "Mixed technical signals"
       }
     },
     "NIFTY_FMCG": {
       "basic_data": {
         "symbol": "^CNXFMCG",
-        "current_price": 55815.6,
-        "daily_change": -0.6,
-        "weekly_change": -1.09,
-        "monthly_change": 1.67,
+        "current_price": 55711.75,
+        "daily_change": -0.19,
+        "weekly_change": -0.71,
+        "monthly_change": 0.73,
         "volume": {
-          "current": 30000,
-          "average_20d": 33295,
-          "ratio": 0.9
+          "current": 30800,
+          "average_20d": 33415,
+          "ratio": 0.92
         },
         "price_levels": {
           "high_52w": 58485.05,
           "low_52w": 54142.3,
-          "distance_from_high": -4.56,
-          "distance_from_low": 3.09
+          "distance_from_high": -4.74,
+          "distance_from_low": 2.9
         },
         "historical_closes": [
-          54900.95,
           55309.9,
           55034.45,
           55010.15,
@@ -710,7 +703,8 @@
           56343.5,
           56208.5,
           56153.7,
-          55815.6
+          55815.6,
+          55711.75
         ],
         "sentiment": 0
       },
@@ -718,11 +712,11 @@
       "signal": "NEUTRAL",
       "technical_indicators": {
         "signal": "NEUTRAL",
-        "score": 1,
-        "rsi": 66.95,
-        "sma_20": 55741.82,
+        "score": -1,
+        "rsi": 61.21,
+        "sma_20": 55789.22,
         "technical_summary": {
-          "price_above_ma": "True",
+          "price_above_ma": "False",
           "rsi_status": "Neutral",
           "volume_status": "Normal"
         }
@@ -731,8 +725,8 @@
       "recommendation": {
         "action": "HOLD",
         "adjustment": "Maintain current position",
-        "target_price": 55815.6,
-        "stop_loss": 54626.98,
+        "target_price": 55711.75,
+        "stop_loss": 54673.44,
         "confidence": "Low",
         "rationale": "Mixed technical signals"
       }
@@ -742,23 +736,22 @@
     "HDFCBANK": {
       "basic_data": {
         "symbol": "HDFCBANK.NS",
-        "current_price": 985.25,
-        "daily_change": -0.75,
-        "weekly_change": -1.76,
-        "monthly_change": -0.17,
+        "current_price": 984.65,
+        "daily_change": -0.06,
+        "weekly_change": -2.3,
+        "monthly_change": -1.32,
         "volume": {
-          "current": 20024544,
-          "average_20d": 20886061,
-          "ratio": 0.96
+          "current": 22279516,
+          "average_20d": 19926265,
+          "ratio": 1.12
         },
         "price_levels": {
           "high_52w": 1020.5,
           "low_52w": 939.1,
-          "distance_from_high": -3.45,
-          "distance_from_low": 4.91
+          "distance_from_high": -3.51,
+          "distance_from_low": 4.85
         },
         "historical_closes": [
-          986.95,
           997.8,
           984.95,
           990.15,
@@ -816,7 +809,9 @@
           998.15,
           987.3,
           992.65,
-          985.25
+          985.25,
+          985.25,
+          984.65
         ],
         "sentiment": 0
       },
@@ -824,9 +819,9 @@
       "signal": "NEUTRAL",
       "technical_indicators": {
         "signal": "NEUTRAL",
-        "score": -1,
-        "rsi": 54.4,
-        "sma_20": 992.02,
+        "score": -2,
+        "rsi": 43.58,
+        "sma_20": 992.46,
         "technical_summary": {
           "price_above_ma": "False",
           "rsi_status": "Neutral",
@@ -837,32 +832,31 @@
       "recommendation": {
         "action": "HOLD",
         "adjustment": "Maintain current position",
-        "target_price": 985.25,
-        "stop_loss": 972.18,
-        "confidence": "Low",
+        "target_price": 984.65,
+        "stop_loss": 972.61,
+        "confidence": "Medium",
         "rationale": "Mixed technical signals"
       }
     },
     "INFY": {
       "basic_data": {
         "symbol": "INFY.NS",
-        "current_price": 1467.9,
-        "daily_change": -1.18,
-        "weekly_change": -2.43,
-        "monthly_change": 3.15,
+        "current_price": 1466.7,
+        "daily_change": -0.08,
+        "weekly_change": -2.89,
+        "monthly_change": 2.7,
         "volume": {
-          "current": 8691330,
-          "average_20d": 7353481,
-          "ratio": 1.18
+          "current": 7944752,
+          "average_20d": 7239343,
+          "ratio": 1.1
         },
         "price_levels": {
           "high_52w": 1555.0,
           "low_52w": 1414.0,
-          "distance_from_high": -5.6,
-          "distance_from_low": 3.81
+          "distance_from_high": -5.68,
+          "distance_from_low": 3.73
         },
         "historical_closes": [
-          1423.1,
           1428.2,
           1424.1,
           1426.6,
@@ -920,7 +914,9 @@
           1493.8,
           1482.3,
           1485.5,
-          1467.9
+          1467.9,
+          1467.9,
+          1466.7
         ],
         "sentiment": 0
       },
@@ -929,8 +925,8 @@
       "technical_indicators": {
         "signal": "NEUTRAL",
         "score": -2,
-        "rsi": 45.08,
-        "sma_20": 1488.98,
+        "rsi": 48.84,
+        "sma_20": 1488.04,
         "technical_summary": {
           "price_above_ma": "False",
           "rsi_status": "Neutral",
@@ -941,8 +937,8 @@
       "recommendation": {
         "action": "HOLD",
         "adjustment": "Maintain current position",
-        "target_price": 1467.9,
-        "stop_loss": 1459.2,
+        "target_price": 1466.7,
+        "stop_loss": 1458.28,
         "confidence": "Medium",
         "rationale": "Mixed technical signals"
       }
@@ -950,23 +946,22 @@
     "RELIANCE": {
       "basic_data": {
         "symbol": "RELIANCE.NS",
-        "current_price": 1473.1,
-        "daily_change": -0.78,
-        "weekly_change": -0.74,
-        "monthly_change": 7.7,
+        "current_price": 1496.1,
+        "daily_change": 1.56,
+        "weekly_change": -0.54,
+        "monthly_change": 7.93,
         "volume": {
-          "current": 10007806,
-          "average_20d": 11511740,
-          "ratio": 0.87
+          "current": 16772678,
+          "average_20d": 11361917,
+          "ratio": 1.48
         },
         "price_levels": {
           "high_52w": 1508.3,
           "low_52w": 1340.6,
-          "distance_from_high": -2.33,
-          "distance_from_low": 9.88
+          "distance_from_high": -0.81,
+          "distance_from_low": 11.6
         },
         "historical_closes": [
-          1367.8,
           1386.2,
           1380.4,
           1382.6,
@@ -1024,7 +1019,9 @@
           1488.5,
           1486.4,
           1484.7,
-          1473.1
+          1473.1,
+          1473.1,
+          1496.1
         ],
         "sentiment": 0
       },
@@ -1033,8 +1030,8 @@
       "technical_indicators": {
         "signal": "NEUTRAL",
         "score": -1,
-        "rsi": 74.37,
-        "sma_20": 1434.59,
+        "rsi": 74.85,
+        "sma_20": 1445.44,
         "technical_summary": {
           "price_above_ma": "True",
           "rsi_status": "Overbought",
@@ -1045,8 +1042,8 @@
       "recommendation": {
         "action": "HOLD",
         "adjustment": "Maintain current position",
-        "target_price": 1473.1,
-        "stop_loss": 1405.9,
+        "target_price": 1496.1,
+        "stop_loss": 1416.53,
         "confidence": "Low",
         "rationale": "Mixed technical signals"
       }
@@ -1054,23 +1051,22 @@
     "TCS": {
       "basic_data": {
         "symbol": "TCS.NS",
-        "current_price": 2990.2,
-        "daily_change": -0.88,
-        "weekly_change": -3.07,
-        "monthly_change": -1.52,
+        "current_price": 3010.9,
+        "daily_change": 0.69,
+        "weekly_change": -1.53,
+        "monthly_change": -0.98,
         "volume": {
-          "current": 2670720,
-          "average_20d": 3329031,
-          "ratio": 0.8
+          "current": 2542721,
+          "average_20d": 3096926,
+          "ratio": 0.82
         },
         "price_levels": {
           "high_52w": 3203.0,
           "low_52w": 2866.6,
-          "distance_from_high": -6.64,
-          "distance_from_low": 4.31
+          "distance_from_high": -6.0,
+          "distance_from_low": 5.03
         },
         "historical_closes": [
-          3036.4,
           3040.8,
           3035.4,
           3036.2,
@@ -1128,7 +1124,9 @@
           3035.3,
           3058.0,
           3016.8,
-          2990.2
+          2990.2,
+          2990.2,
+          3010.9
         ],
         "sentiment": 0
       },
@@ -1136,9 +1134,9 @@
       "signal": "NEUTRAL",
       "technical_indicators": {
         "signal": "NEUTRAL",
-        "score": -2,
-        "rsi": 54.69,
-        "sma_20": 3021.0,
+        "score": -1,
+        "rsi": 56.11,
+        "sma_20": 3021.02,
         "technical_summary": {
           "price_above_ma": "False",
           "rsi_status": "Neutral",
@@ -1149,32 +1147,31 @@
       "recommendation": {
         "action": "HOLD",
         "adjustment": "Maintain current position",
-        "target_price": 2990.2,
-        "stop_loss": 2960.58,
-        "confidence": "Medium",
+        "target_price": 3010.9,
+        "stop_loss": 2960.6,
+        "confidence": "Low",
         "rationale": "Mixed technical signals"
       }
     },
     "ICICIBANK": {
       "basic_data": {
         "symbol": "ICICIBANK.NS",
-        "current_price": 1336.9,
-        "daily_change": -0.71,
-        "weekly_change": -2.95,
-        "monthly_change": -6.89,
+        "current_price": 1320.4,
+        "daily_change": -1.23,
+        "weekly_change": -3.65,
+        "monthly_change": -8.09,
         "volume": {
-          "current": 15211183,
-          "average_20d": 13081865,
-          "ratio": 1.16
+          "current": 24221853,
+          "average_20d": 13081593,
+          "ratio": 1.85
         },
         "price_levels": {
           "high_52w": 1452.4,
-          "low_52w": 1333.2,
-          "distance_from_high": -7.95,
-          "distance_from_low": 0.28
+          "low_52w": 1317.4,
+          "distance_from_high": -9.09,
+          "distance_from_low": 0.23
         },
         "historical_closes": [
-          1435.9,
           1436.6,
           1422.0,
           1420.8,
@@ -1232,7 +1229,9 @@
           1362.4,
           1345.3,
           1346.4,
-          1336.9
+          1336.9,
+          1336.9,
+          1320.4
         ],
         "sentiment": 0
       },
@@ -1240,45 +1239,50 @@
       "signal": "NEUTRAL",
       "technical_indicators": {
         "signal": "NEUTRAL",
-        "score": -2,
-        "rsi": 38.02,
-        "sma_20": 1376.72,
+        "score": 1,
+        "rsi": 23.13,
+        "sma_20": 1372.27,
         "technical_summary": {
           "price_above_ma": "False",
-          "rsi_status": "Neutral",
-          "volume_status": "Normal"
+          "rsi_status": "Oversold",
+          "volume_status": "High"
         }
       },
-      "projects": [],
+      "projects": [
+        {
+          "type": "OVERSOLD_BOUNCE",
+          "description": "Oversold condition (RSI: 23.1), potential recovery",
+          "confidence": "Medium"
+        }
+      ],
       "recommendation": {
         "action": "HOLD",
         "adjustment": "Maintain current position",
-        "target_price": 1336.9,
-        "stop_loss": 1349.19,
-        "confidence": "Medium",
+        "target_price": 1320.4,
+        "stop_loss": 1344.82,
+        "confidence": "Low",
         "rationale": "Mixed technical signals"
       }
     },
     "ITC": {
       "basic_data": {
         "symbol": "ITC.NS",
-        "current_price": 408.9,
-        "daily_change": -1.22,
-        "weekly_change": -2.79,
-        "monthly_change": -1.35,
+        "current_price": 407.5,
+        "daily_change": -0.34,
+        "weekly_change": -3.34,
+        "monthly_change": -2.24,
         "volume": {
-          "current": 10085404,
-          "average_20d": 13714234,
-          "ratio": 0.74
+          "current": 10095563,
+          "average_20d": 13183940,
+          "ratio": 0.77
         },
         "price_levels": {
           "high_52w": 427.0,
           "low_52w": 396.2,
-          "distance_from_high": -4.24,
-          "distance_from_low": 3.21
+          "distance_from_high": -4.57,
+          "distance_from_low": 2.85
         },
         "historical_closes": [
-          414.5,
           416.85,
           416.35,
           414.1,
@@ -1336,7 +1340,9 @@
           418.75,
           420.35,
           413.95,
-          408.9
+          408.9,
+          408.9,
+          407.5
         ],
         "sentiment": 0
       },
@@ -1345,8 +1351,8 @@
       "technical_indicators": {
         "signal": "NEUTRAL",
         "score": -2,
-        "rsi": 62.98,
-        "sma_20": 409.81,
+        "rsi": 52.96,
+        "sma_20": 410.65,
         "technical_summary": {
           "price_above_ma": "False",
           "rsi_status": "Neutral",
@@ -1357,8 +1363,8 @@
       "recommendation": {
         "action": "HOLD",
         "adjustment": "Maintain current position",
-        "target_price": 408.9,
-        "stop_loss": 401.61,
+        "target_price": 407.5,
+        "stop_loss": 402.44,
         "confidence": "Medium",
         "rationale": "Mixed technical signals"
       }
@@ -1366,23 +1372,22 @@
     "SBIN": {
       "basic_data": {
         "symbol": "SBIN.NS",
-        "current_price": 957.6,
-        "daily_change": 0.83,
-        "weekly_change": 3.78,
-        "monthly_change": 19.06,
+        "current_price": 960.75,
+        "daily_change": 0.33,
+        "weekly_change": 2.23,
+        "monthly_change": 16.67,
         "volume": {
-          "current": 19154518,
-          "average_20d": 10779568,
-          "ratio": 1.78
+          "current": 23088096,
+          "average_20d": 11114038,
+          "ratio": 2.08
         },
         "price_levels": {
-          "high_52w": 959.3,
-          "low_52w": 790.0,
-          "distance_from_high": -0.18,
-          "distance_from_low": 21.22
+          "high_52w": 971.4,
+          "low_52w": 798.5,
+          "distance_from_high": -1.1,
+          "distance_from_low": 20.32
         },
         "historical_closes": [
-          804.3,
           823.45,
           820.6,
           821.85,
@@ -1440,7 +1445,9 @@
           934.35,
           937.0,
           949.7,
-          957.6
+          957.6,
+          957.6,
+          960.75
         ],
         "sentiment": 0
       },
@@ -1449,8 +1456,8 @@
       "technical_indicators": {
         "signal": "NEUTRAL",
         "score": 1,
-        "rsi": 88.2,
-        "sma_20": 904.53,
+        "rsi": 87.39,
+        "sma_20": 914.3,
         "technical_summary": {
           "price_above_ma": "True",
           "rsi_status": "Overbought",
@@ -1460,15 +1467,15 @@
       "projects": [
         {
           "type": "VALUE_OPPORTUNITY",
-          "description": "Trading 21.2% above 52W low with positive momentum",
+          "description": "Trading 20.3% above 52W low with positive momentum",
           "confidence": "Medium"
         }
       ],
       "recommendation": {
         "action": "HOLD",
         "adjustment": "Maintain current position",
-        "target_price": 957.6,
-        "stop_loss": 886.44,
+        "target_price": 960.75,
+        "stop_loss": 896.01,
         "confidence": "Low",
         "rationale": "Mixed technical signals"
       }
@@ -1476,23 +1483,22 @@
     "LT": {
       "basic_data": {
         "symbol": "LT.NS",
-        "current_price": 3924.4,
-        "daily_change": -1.41,
-        "weekly_change": 0.02,
-        "monthly_change": 8.78,
+        "current_price": 3881.6,
+        "daily_change": -1.09,
+        "weekly_change": -1.93,
+        "monthly_change": 5.81,
         "volume": {
-          "current": 2042881,
-          "average_20d": 1889927,
-          "ratio": 1.08
+          "current": 1749063,
+          "average_20d": 1822451,
+          "ratio": 0.96
         },
         "price_levels": {
           "high_52w": 4062.6,
           "low_52w": 3516.4,
-          "distance_from_high": -3.4,
-          "distance_from_low": 11.6
+          "distance_from_high": -4.46,
+          "distance_from_low": 10.39
         },
         "historical_closes": [
-          3607.6,
           3668.4,
           3686.1,
           3693.7,
@@ -1550,7 +1556,9 @@
           3987.5,
           4030.9,
           3980.5,
-          3924.4
+          3924.4,
+          3924.4,
+          3881.6
         ],
         "sentiment": 0
       },
@@ -1558,11 +1566,11 @@
       "signal": "NEUTRAL",
       "technical_indicators": {
         "signal": "NEUTRAL",
-        "score": 1,
-        "rsi": 68.2,
-        "sma_20": 3870.94,
+        "score": -1,
+        "rsi": 52.36,
+        "sma_20": 3888.27,
         "technical_summary": {
-          "price_above_ma": "True",
+          "price_above_ma": "False",
           "rsi_status": "Neutral",
           "volume_status": "Normal"
         }
@@ -1571,8 +1579,8 @@
       "recommendation": {
         "action": "HOLD",
         "adjustment": "Maintain current position",
-        "target_price": 3924.4,
-        "stop_loss": 3793.52,
+        "target_price": 3881.6,
+        "stop_loss": 3810.5,
         "confidence": "Low",
         "rationale": "Mixed technical signals"
       }
@@ -1580,23 +1588,22 @@
     "AXISBANK": {
       "basic_data": {
         "symbol": "AXISBANK.NS",
-        "current_price": 1226.6,
-        "daily_change": -0.58,
-        "weekly_change": -2.19,
-        "monthly_change": 15.92,
+        "current_price": 1228.5,
+        "daily_change": 0.15,
+        "weekly_change": -1.63,
+        "monthly_change": 14.46,
         "volume": {
-          "current": 3299345,
-          "average_20d": 6678709,
-          "ratio": 0.49
+          "current": 3733721,
+          "average_20d": 6176365,
+          "ratio": 0.6
         },
         "price_levels": {
           "high_52w": 1276.1,
           "low_52w": 1042.5,
-          "distance_from_high": -3.88,
-          "distance_from_low": 17.66
+          "distance_from_high": -3.73,
+          "distance_from_low": 17.84
         },
         "historical_closes": [
-          1058.1,
           1073.3,
           1070.0,
           1066.0,
@@ -1654,7 +1661,9 @@
           1238.6,
           1232.8,
           1233.7,
-          1226.6
+          1226.6,
+          1226.6,
+          1228.5
         ],
         "sentiment": 0
       },
@@ -1662,9 +1671,9 @@
       "signal": "NEUTRAL",
       "technical_indicators": {
         "signal": "NEUTRAL",
-        "score": 0,
-        "rsi": 65.58,
-        "sma_20": 1214.63,
+        "score": 1,
+        "rsi": 62.6,
+        "sma_20": 1219.01,
         "technical_summary": {
           "price_above_ma": "True",
           "rsi_status": "Neutral",
@@ -1675,12 +1684,12 @@
       "recommendation": {
         "action": "HOLD",
         "adjustment": "Maintain current position",
-        "target_price": 1226.6,
-        "stop_loss": 1190.34,
+        "target_price": 1228.5,
+        "stop_loss": 1194.63,
         "confidence": "Low",
         "rationale": "Mixed technical signals"
       }
     }
   },
-  "last_run": "2025-11-06T06:32:10.118936"
+  "last_run": "2025-11-07T06:32:06.083725"
 }
