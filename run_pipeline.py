@@ -3,7 +3,8 @@ import sys
 import datetime
 import json
 import os
-
+from dotenv import load_dotenv
+load_dotenv()
 def run_pipeline():
     print(f"\n🚀 Running pipeline at {datetime.datetime.now()}")
 

@@ -24,6 +24,7 @@ beautifulsoup4==4.12.3
 # ===== Deployment Stability =====
 setuptools>=70.0.0
 wheel>=0.44.0
-
+dotenv
 # ===== Optional (for Render and cron use) =====
 schedule==1.2.1
+groq

@@ -1,27 +1,25 @@
 {
-  "analysis_time": "2025-11-05T03:14:23.788034",
+  "analysis_time": "2025-11-07T14:35:31.201332",
   "indices": {
     "NIFTY_50": {
       "basic_data": {
         "symbol": "^NSEI",
-        "current_price": 25597.65,
-        "daily_change": -0.64,
-        "weekly_change": -1.42,
-        "monthly_change": 4.07,
+        "current_price": 25509.7,
+        "daily_change": -0.34,
+        "weekly_change": -1.64,
+        "monthly_change": 3.76,
         "volume": {
-          "current": 305100,
-          "average_20d": 281315,
-          "ratio": 1.08
+          "current": 371900,
+          "average_20d": 285510,
+          "ratio": 1.3
         },
         "price_levels": {
           "high_52w": 26104.2,
-          "low_52w": 24337.5,
-          "distance_from_high": -1.94,
-          "distance_from_low": 5.18
+          "low_52w": 24347.45,
+          "distance_from_high": -2.28,
+          "distance_from_low": 4.77
         },
         "historical_closes": [
-          24596.15,
-          24363.3,
           24585.05,
           24487.4,
           24619.35,
@@ -79,7 +77,8 @@
           25877.85,
           25722.1,
           25763.35,
-          25597.65
+          25597.65,
+          25509.7
         ],
         "sentiment": 0
       },
@@ -87,11 +86,11 @@
       "signal": "NEUTRAL",
       "technical_indicators": {
         "signal": "NEUTRAL",
-        "score": 1,
-        "rsi": 63.3,
-        "sma_20": 25596.43,
+        "score": -1,
+        "rsi": 55.78,
+        "sma_20": 25616.5,
         "technical_summary": {
-          "price_above_ma": "True",
+          "price_above_ma": "False",
           "rsi_status": "Neutral",
           "volume_status": "Normal"
         }
@@ -100,8 +99,8 @@
       "recommendation": {
         "action": "HOLD",
         "adjustment": "Maintain current position",
-        "target_price": 25597.65,
-        "stop_loss": 25084.5,
+        "target_price": 25509.7,
+        "stop_loss": 25104.17,
         "confidence": "Low",
         "rationale": "Mixed technical signals"
       }
@@ -109,24 +108,22 @@
     "SENSEX": {
       "basic_data": {
         "symbol": "^BSESN",
-        "current_price": 83459.15,
-        "daily_change": -0.62,
-        "weekly_change": -1.56,
-        "monthly_change": 3.52,
+        "current_price": 83190.87,
+        "daily_change": -0.14,
+        "weekly_change": -2.13,
+        "monthly_change": 3.21,
         "volume": {
-          "current": 9500,
-          "average_20d": 13515,
-          "ratio": 0.7
+          "current": 0,
+          "average_20d": 12955,
+          "ratio": 0.0
         },
         "price_levels": {
           "high_52w": 85290.06,
           "low_52w": 79741.76,
-          "distance_from_high": -2.15,
-          "distance_from_low": 4.66
+          "distance_from_high": -2.46,
+          "distance_from_low": 4.33
         },
         "historical_closes": [
-          80623.26,
-          79857.79,
           80604.08,
           80235.59,
           80539.91,
@@ -184,7 +181,9 @@
           84404.46,
           83938.71,
           83978.49,
-          83459.15
+          83459.15,
+          83311.01,
+          83190.87
         ],
         "sentiment": 0
       },
@@ -192,9 +191,9 @@
       "signal": "NEUTRAL",
       "technical_indicators": {
         "signal": "NEUTRAL",
-        "score": -1,
-        "rsi": 62.82,
-        "sma_20": 83524.93,
+        "score": -2,
+        "rsi": 46.86,
+        "sma_20": 83665.0,
         "technical_summary": {
           "price_above_ma": "False",
           "rsi_status": "Neutral",
@@ -205,9 +204,9 @@
       "recommendation": {
         "action": "HOLD",
         "adjustment": "Maintain current position",
-        "target_price": 83459.15,
-        "stop_loss": 81854.43,
-        "confidence": "Low",
+        "target_price": 83190.87,
+        "stop_loss": 81991.7,
+        "confidence": "Medium",
         "rationale": "Mixed technical signals"
       }
     }
@@ -216,24 +215,22 @@
     "BANK_NIFTY": {
       "basic_data": {
         "symbol": "^NSEBANK",
-        "current_price": 57827.05,
-        "daily_change": -0.47,
-        "weekly_change": -0.49,
-        "monthly_change": 4.15,
+        "current_price": 57921.65,
+        "daily_change": 0.64,
+        "weekly_change": -0.79,
+        "monthly_change": 4.34,
         "volume": {
-          "current": 168600,
-          "average_20d": 166685,
-          "ratio": 1.01
+          "current": 0,
+          "average_20d": 160840,
+          "ratio": 0.0
         },
         "price_levels": {
           "high_52w": 58577.5,
           "low_52w": 53561.75,
-          "distance_from_high": -1.28,
-          "distance_from_low": 7.96
+          "distance_from_high": -1.12,
+          "distance_from_low": 8.14
         },
         "historical_closes": [
-          55521.15,
-          55004.9,
           55510.75,
           55043.7,
           55181.45,
@@ -291,7 +288,9 @@
           58031.1,
           57776.35,
           58101.45,
-          57827.05
+          57827.05,
+          57554.25,
+          57921.65
         ],
         "sentiment": 0
       },
@@ -300,8 +299,8 @@
       "technical_indicators": {
         "signal": "NEUTRAL",
         "score": 1,
-        "rsi": 67.03,
-        "sma_20": 57419.21,
+        "rsi": 56.89,
+        "sma_20": 57580.13,
         "technical_summary": {
           "price_above_ma": "True",
           "rsi_status": "Neutral",
@@ -312,8 +311,8 @@
       "recommendation": {
         "action": "HOLD",
         "adjustment": "Maintain current position",
-        "target_price": 57827.05,
-        "stop_loss": 56270.83,
+        "target_price": 57921.65,
+        "stop_loss": 56428.53,
         "confidence": "Low",
         "rationale": "Mixed technical signals"
       }
@@ -321,24 +320,22 @@
     "NIFTY_IT": {
       "basic_data": {
         "symbol": "^CNXIT",
-        "current_price": 35274.55,
-        "daily_change": -1.06,
-        "weekly_change": -2.37,
-        "monthly_change": 1.58,
+        "current_price": 35105.75,
+        "daily_change": -0.66,
+        "weekly_change": -2.73,
+        "monthly_change": 1.62,
         "volume": {
-          "current": 23000,
-          "average_20d": 26440,
-          "ratio": 0.87
+          "current": 0,
+          "average_20d": 25480,
+          "ratio": 0.0
         },
         "price_levels": {
           "high_52w": 37064.95,
           "low_52w": 33432.1,
-          "distance_from_high": -4.83,
-          "distance_from_low": 5.51
+          "distance_from_high": -5.29,
+          "distance_from_low": 5.01
         },
         "historical_closes": [
-          34726.8,
-          34398.5,
           34544.65,
           34674.3,
           34692.95,
@@ -396,7 +393,9 @@
           35906.4,
           35712.35,
           35653.1,
-          35274.55
+          35274.55,
+          35337.6,
+          35105.75
         ],
         "sentiment": 0
       },
@@ -405,8 +404,8 @@
       "technical_indicators": {
         "signal": "NEUTRAL",
         "score": -2,
-        "rsi": 50.84,
-        "sma_20": 35544.59,
+        "rsi": 44.01,
+        "sma_20": 35569.67,
         "technical_summary": {
           "price_above_ma": "False",
           "rsi_status": "Neutral",
@@ -417,8 +416,8 @@
       "recommendation": {
         "action": "HOLD",
         "adjustment": "Maintain current position",
-        "target_price": 35274.55,
-        "stop_loss": 34833.7,
+        "target_price": 35105.75,
+        "stop_loss": 34858.28,
         "confidence": "Medium",
         "rationale": "Mixed technical signals"
       }
@@ -426,24 +425,22 @@
     "NIFTY_PHARMA": {
       "basic_data": {
         "symbol": "^CNXPHARMA",
-        "current_price": 22334.45,
-        "daily_change": -0.48,
-        "weekly_change": 0.11,
-        "monthly_change": 3.0,
+        "current_price": 22186.85,
+        "daily_change": -0.29,
+        "weekly_change": -1.09,
+        "monthly_change": 2.69,
         "volume": {
-          "current": 22298300,
-          "average_20d": 18074875,
-          "ratio": 1.23
+          "current": 0,
+          "average_20d": 18379985,
+          "ratio": 0.0
         },
         "price_levels": {
           "high_52w": 22716.9,
           "low_52w": 21324.05,
-          "distance_from_high": -1.68,
-          "distance_from_low": 4.74
+          "distance_from_high": -2.33,
+          "distance_from_low": 4.05
         },
         "historical_closes": [
-          21684.8,
-          21402.15,
           21604.65,
           21753.5,
           22130.3,
@@ -501,7 +498,9 @@
           22298.2,
           22175.4,
           22442.6,
-          22334.45
+          22334.45,
+          22250.55,
+          22186.85
         ],
         "sentiment": 0
       },
@@ -509,27 +508,21 @@
       "signal": "NEUTRAL",
       "technical_indicators": {
         "signal": "NEUTRAL",
-        "score": 1,
-        "rsi": 59.51,
-        "sma_20": 22221.63,
+        "score": -1,
+        "rsi": 52.56,
+        "sma_20": 22264.36,
         "technical_summary": {
-          "price_above_ma": "True",
+          "price_above_ma": "False",
           "rsi_status": "Neutral",
           "volume_status": "Normal"
         }
       },
-      "projects": [
-        {
-          "type": "TECHNICAL_BREAKOUT",
-          "description": "Breaking above 52W high of \u20b922,716.90",
-          "confidence": "Medium"
-        }
-      ],
+      "projects": [],
       "recommendation": {
         "action": "HOLD",
         "adjustment": "Maintain current position",
-        "target_price": 22334.45,
-        "stop_loss": 21777.2,
+        "target_price": 22186.85,
+        "stop_loss": 21819.07,
         "confidence": "Low",
         "rationale": "Mixed technical signals"
       }
@@ -537,24 +530,22 @@
     "NIFTY_AUTO": {
       "basic_data": {
         "symbol": "^CNXAUTO",
-        "current_price": 26610.05,
-        "daily_change": -0.86,
-        "weekly_change": -2.4,
-        "monthly_change": 11.77,
+        "current_price": 26826.4,
+        "daily_change": 0.75,
+        "weekly_change": -0.45,
+        "monthly_change": 13.08,
         "volume": {
-          "current": 399300,
-          "average_20d": 461475,
-          "ratio": 0.87
+          "current": 0,
+          "average_20d": 437445,
+          "ratio": 0.0
         },
         "price_levels": {
           "high_52w": 27725.75,
-          "low_52w": 23439.05,
-          "distance_from_high": -4.02,
-          "distance_from_low": 13.53
+          "low_52w": 23440.2,
+          "distance_from_high": -3.24,
+          "distance_from_low": 14.45
         },
         "historical_closes": [
-          23808.1,
-          23474.65,
           23723.75,
           23856.6,
           24122.65,
@@ -612,7 +603,9 @@
           26829.55,
           26809.85,
           26841.8,
-          26610.05
+          26610.05,
+          26626.5,
+          26826.4
         ],
         "sentiment": 0
       },
@@ -620,9 +613,9 @@
       "signal": "NEUTRAL",
       "technical_indicators": {
         "signal": "NEUTRAL",
-        "score": -2,
-        "rsi": 49.09,
-        "sma_20": 26914.19,
+        "score": -1,
+        "rsi": 42.47,
+        "sma_20": 26914.03,
         "technical_summary": {
           "price_above_ma": "False",
           "rsi_status": "Neutral",
@@ -633,33 +626,31 @@
       "recommendation": {
         "action": "HOLD",
         "adjustment": "Maintain current position",
-        "target_price": 26610.05,
-        "stop_loss": 26375.91,
-        "confidence": "Medium",
+        "target_price": 26826.4,
+        "stop_loss": 26375.75,
+        "confidence": "Low",
         "rationale": "Mixed technical signals"
       }
     },
     "NIFTY_FMCG": {
       "basic_data": {
         "symbol": "^CNXFMCG",
-        "current_price": 55815.6,
-        "daily_change": -0.6,
-        "weekly_change": -1.09,
-        "monthly_change": 0.94,
+        "current_price": 55432.6,
+        "daily_change": -0.5,
+        "weekly_change": -2.09,
+        "monthly_change": 0.22,
         "volume": {
-          "current": 30000,
-          "average_20d": 33295,
-          "ratio": 0.9
+          "current": 0,
+          "average_20d": 32170,
+          "ratio": 0.0
         },
         "price_levels": {
           "high_52w": 58485.05,
           "low_52w": 54142.3,
-          "distance_from_high": -4.56,
-          "distance_from_low": 3.09
+          "distance_from_high": -5.22,
+          "distance_from_low": 2.38
         },
         "historical_closes": [
-          55298.5,
-          54900.95,
           55309.9,
           55034.45,
           55010.15,
@@ -717,7 +708,9 @@
           56343.5,
           56208.5,
           56153.7,
-          55815.6
+          55815.6,
+          55711.75,
+          55432.6
         ],
         "sentiment": 0
       },
@@ -725,11 +718,11 @@
       "signal": "NEUTRAL",
       "technical_indicators": {
         "signal": "NEUTRAL",
-        "score": 1,
-        "rsi": 66.95,
-        "sma_20": 55741.82,
+        "score": -2,
+        "rsi": 43.93,
+        "sma_20": 55836.37,
         "technical_summary": {
-          "price_above_ma": "True",
+          "price_above_ma": "False",
           "rsi_status": "Neutral",
           "volume_status": "Normal"
         }
@@ -738,9 +731,9 @@
       "recommendation": {
         "action": "HOLD",
         "adjustment": "Maintain current position",
-        "target_price": 55815.6,
-        "stop_loss": 54626.98,
-        "confidence": "Low",
+        "target_price": 55432.6,
+        "stop_loss": 54719.64,
+        "confidence": "Medium",
         "rationale": "Mixed technical signals"
       }
     }
@@ -749,25 +742,22 @@
     "HDFCBANK": {
       "basic_data": {
         "symbol": "HDFCBANK.NS",
-        "current_price": 985.25,
-        "daily_change": -0.75,
-        "weekly_change": -1.76,
-        "monthly_change": -1.25,
+        "current_price": 982.1,
+        "daily_change": -0.26,
+        "weekly_change": -1.61,
+        "monthly_change": -0.29,
         "volume": {
-          "current": 20024544,
-          "average_20d": 20886061,
-          "ratio": 0.96
+          "current": 11572287,
+          "average_20d": 19736332,
+          "ratio": 0.59
         },
         "price_levels": {
           "high_52w": 1020.5,
           "low_52w": 939.1,
-          "distance_from_high": -3.45,
-          "distance_from_low": 4.91
+          "distance_from_high": -3.76,
+          "distance_from_low": 4.58
         },
         "historical_closes": [
-          997.7,
-          986.95,
-          997.8,
           984.95,
           990.15,
           995.55,
@@ -824,7 +814,10 @@
           998.15,
           987.3,
           992.65,
-          985.25
+          985.25,
+          985.25,
+          984.65,
+          982.1
         ],
         "sentiment": 0
       },
@@ -833,8 +826,8 @@
       "technical_indicators": {
         "signal": "NEUTRAL",
         "score": -1,
-        "rsi": 54.4,
-        "sma_20": 992.02,
+        "rsi": 35.36,
+        "sma_20": 992.7,
         "technical_summary": {
           "price_above_ma": "False",
           "rsi_status": "Neutral",
@@ -845,41 +838,38 @@
       "recommendation": {
         "action": "HOLD",
         "adjustment": "Maintain current position",
-        "target_price": 985.25,
-        "stop_loss": 972.18,
+        "target_price": 982.1,
+        "stop_loss": 972.85,
         "confidence": "Low",
         "rationale": "Mixed technical signals"
       },
       "future_outlook": {
         "prediction": "Neutral",
         "expected_change_6m": "-2% to +5%",
-        "expected_change_1y": "+2% to +10%",
-        "confidence": "Low",
-        "reasoning": "The technical summary indicates a neutral signal with a recent negative weekly change, however, the RSI is relatively neutral. The lack of significant news suggests the stock might trade sideways. The absence of catalysts limits potential price movement, therefore a neutral outlook is given."
+        "expected_change_1y": "+3% to +10%",
+        "confidence": "Medium",
+        "reasoning": "RSI near 35 implies limited downside, but neutral signal and lack of catalysts suggest range-bound action. HDFC Bank\u2019s large size and steady loan growth support modest upside over 12 months."
       }
     },
     "INFY": {
       "basic_data": {
         "symbol": "INFY.NS",
-        "current_price": 1467.9,
-        "daily_change": -1.18,
-        "weekly_change": -2.43,
-        "monthly_change": 2.16,
+        "current_price": 1476.0,
+        "daily_change": 0.63,
+        "weekly_change": -1.19,
+        "monthly_change": 3.64,
         "volume": {
-          "current": 8691330,
-          "average_20d": 7353481,
-          "ratio": 1.18
+          "current": 6913890,
+          "average_20d": 7233600,
+          "ratio": 0.96
         },
         "price_levels": {
           "high_52w": 1555.0,
           "low_52w": 1414.0,
-          "distance_from_high": -5.6,
-          "distance_from_low": 3.81
+          "distance_from_high": -5.08,
+          "distance_from_low": 4.38
         },
         "historical_closes": [
-          1436.9,
-          1423.1,
-          1428.2,
           1424.1,
           1426.6,
           1447.7,
@@ -936,7 +926,10 @@
           1493.8,
           1482.3,
           1485.5,
-          1467.9
+          1467.9,
+          1467.9,
+          1466.7,
+          1476.0
         ],
         "sentiment": 0
       },
@@ -944,9 +937,9 @@
       "signal": "NEUTRAL",
       "technical_indicators": {
         "signal": "NEUTRAL",
-        "score": -2,
-        "rsi": 45.08,
-        "sma_20": 1488.98,
+        "score": -1,
+        "rsi": 59.42,
+        "sma_20": 1486.37,
         "technical_summary": {
           "price_above_ma": "False",
           "rsi_status": "Neutral",
@@ -957,41 +950,38 @@
       "recommendation": {
         "action": "HOLD",
         "adjustment": "Maintain current position",
-        "target_price": 1467.9,
-        "stop_loss": 1459.2,
-        "confidence": "Medium",
+        "target_price": 1476.0,
+        "stop_loss": 1456.64,
+        "confidence": "Low",
         "rationale": "Mixed technical signals"
       },
       "future_outlook": {
         "prediction": "Neutral",
-        "expected_change_6m": "-5% to +5%",
-        "expected_change_1y": "0% to +10%",
+        "expected_change_6m": "-3% to +5%",
+        "expected_change_1y": "+2% to +10%",
         "confidence": "Low",
-        "reasoning": "The technical summary indicates a neutral signal with recent negative price movement. The RSI is close to neutral territory. The lack of significant news suggests the stock may trade sideways in the short term, with a potential for modest gains over a year, dependent on broader market conditions and sector performance."
+        "reasoning": "Muted technicals, absence of catalysts, and sector-wide demand uncertainty keep risk-reward balanced. Expect range-bound action unless macro or guidance shifts."
       }
     },
     "RELIANCE": {
       "basic_data": {
         "symbol": "RELIANCE.NS",
-        "current_price": 1473.1,
-        "daily_change": -0.78,
-        "weekly_change": -0.74,
-        "monthly_change": 6.02,
+        "current_price": 1480.7,
+        "daily_change": -1.03,
+        "weekly_change": -0.52,
+        "monthly_change": 7.27,
         "volume": {
-          "current": 10007806,
-          "average_20d": 11511740,
-          "ratio": 0.87
+          "current": 5969778,
+          "average_20d": 11219075,
+          "ratio": 0.53
         },
         "price_levels": {
           "high_52w": 1508.3,
           "low_52w": 1340.6,
-          "distance_from_high": -2.33,
-          "distance_from_low": 9.88
+          "distance_from_high": -1.83,
+          "distance_from_low": 10.45
         },
         "historical_closes": [
-          1389.4,
-          1367.8,
-          1386.2,
           1380.4,
           1382.6,
           1373.8,
@@ -1048,7 +1038,10 @@
           1488.5,
           1486.4,
           1484.7,
-          1473.1
+          1473.1,
+          1473.1,
+          1496.1,
+          1480.7
         ],
         "sentiment": 0
       },
@@ -1056,12 +1049,12 @@
       "signal": "NEUTRAL",
       "technical_indicators": {
         "signal": "NEUTRAL",
-        "score": -1,
-        "rsi": 74.37,
-        "sma_20": 1434.59,
+        "score": 1,
+        "rsi": 66.49,
+        "sma_20": 1450.59,
         "technical_summary": {
           "price_above_ma": "True",
-          "rsi_status": "Overbought",
+          "rsi_status": "Neutral",
           "volume_status": "Normal"
         }
       },
@@ -1069,41 +1062,38 @@
       "recommendation": {
         "action": "HOLD",
         "adjustment": "Maintain current position",
-        "target_price": 1473.1,
-        "stop_loss": 1405.9,
+        "target_price": 1480.7,
+        "stop_loss": 1421.58,
         "confidence": "Low",
         "rationale": "Mixed technical signals"
       },
       "future_outlook": {
         "prediction": "Neutral",
-        "expected_change_6m": "-2% to +5%",
-        "expected_change_1y": "0% to +10%",
+        "expected_change_6m": "+2% to -5%",
+        "expected_change_1y": "+5% to -5%",
         "confidence": "Low",
-        "reasoning": "The technical summary indicates a neutral signal and a high RSI, suggesting potential for consolidation or a slight pullback. The lack of recent news provides limited catalysts for significant price movement. Given the mixed signals, a conservative outlook is warranted."
+        "reasoning": "Technical indicators are flat, RSI is neutral, and absence of catalysts limits directional conviction. Large-cap status and index-heavy weighting suggest range-bound action unless macro or company-specific news emerges."
       }
     },
     "TCS": {
       "basic_data": {
         "symbol": "TCS.NS",
-        "current_price": 2990.2,
-        "daily_change": -0.88,
-        "weekly_change": -3.07,
-        "monthly_change": -1.86,
+        "current_price": 2981.6,
+        "daily_change": -0.97,
+        "weekly_change": -1.77,
+        "monthly_change": -1.77,
         "volume": {
-          "current": 2670720,
-          "average_20d": 3329031,
-          "ratio": 0.8
+          "current": 1256644,
+          "average_20d": 2999193,
+          "ratio": 0.42
         },
         "price_levels": {
           "high_52w": 3203.0,
           "low_52w": 2866.6,
-          "distance_from_high": -6.64,
-          "distance_from_low": 4.31
+          "distance_from_high": -6.91,
+          "distance_from_low": 4.01
         },
         "historical_closes": [
-          3047.0,
-          3036.4,
-          3040.8,
           3035.4,
           3036.2,
           3022.3,
@@ -1160,7 +1150,10 @@
           3035.3,
           3058.0,
           3016.8,
-          2990.2
+          2990.2,
+          2990.2,
+          3010.9,
+          2981.6
         ],
         "sentiment": 0
       },
@@ -1168,9 +1161,9 @@
       "signal": "NEUTRAL",
       "technical_indicators": {
         "signal": "NEUTRAL",
-        "score": -2,
-        "rsi": 54.69,
-        "sma_20": 3021.0,
+        "score": -1,
+        "rsi": 52.77,
+        "sma_20": 3017.01,
         "technical_summary": {
           "price_above_ma": "False",
           "rsi_status": "Neutral",
@@ -1181,41 +1174,38 @@
       "recommendation": {
         "action": "HOLD",
         "adjustment": "Maintain current position",
-        "target_price": 2990.2,
-        "stop_loss": 2960.58,
-        "confidence": "Medium",
+        "target_price": 2981.6,
+        "stop_loss": 2956.67,
+        "confidence": "Low",
         "rationale": "Mixed technical signals"
       },
       "future_outlook": {
         "prediction": "Neutral",
-        "expected_change_6m": "-2% to +5%",
-        "expected_change_1y": "0% to +10%",
-        "confidence": "Medium",
-        "reasoning": "The technical summary indicates a neutral signal and a recent negative weekly change. The RSI suggests neither overbought nor oversold conditions. Absence of significant news flow suggests a period of consolidation. The stock may trend sideways or show modest growth in the absence of new catalysts."
+        "expected_change_6m": "-3% to +5%",
+        "expected_change_1y": "-5% to +10%",
+        "confidence": "Low",
+        "reasoning": "Absence of fresh catalysts and neutral technicals suggest range-bound drift. Macro headwinds for IT services and stable large-cap valuations keep risk-reward balanced."
       }
     },
     "ICICIBANK": {
       "basic_data": {
         "symbol": "ICICIBANK.NS",
-        "current_price": 1336.9,
-        "daily_change": -0.71,
-        "weekly_change": -2.95,
-        "monthly_change": -7.18,
+        "current_price": 1342.6,
+        "daily_change": 1.68,
+        "weekly_change": -1.45,
+        "monthly_change": -5.58,
         "volume": {
-          "current": 15211183,
-          "average_20d": 13081865,
-          "ratio": 1.16
+          "current": 5830362,
+          "average_20d": 12977632,
+          "ratio": 0.45
         },
         "price_levels": {
           "high_52w": 1452.4,
-          "low_52w": 1333.2,
-          "distance_from_high": -7.95,
-          "distance_from_low": 0.28
+          "low_52w": 1317.4,
+          "distance_from_high": -7.56,
+          "distance_from_low": 1.91
         },
         "historical_closes": [
-          1440.3,
-          1435.9,
-          1436.6,
           1422.0,
           1420.8,
           1427.3,
@@ -1272,7 +1262,10 @@
           1362.4,
           1345.3,
           1346.4,
-          1336.9
+          1336.9,
+          1336.9,
+          1320.4,
+          1342.6
         ],
         "sentiment": 0
       },
@@ -1280,54 +1273,57 @@
       "signal": "NEUTRAL",
       "technical_indicators": {
         "signal": "NEUTRAL",
-        "score": -2,
-        "rsi": 38.02,
-        "sma_20": 1376.72,
+        "score": 1,
+        "rsi": 24.34,
+        "sma_20": 1370.59,
         "technical_summary": {
           "price_above_ma": "False",
-          "rsi_status": "Neutral",
+          "rsi_status": "Oversold",
           "volume_status": "Normal"
         }
       },
-      "projects": [],
+      "projects": [
+        {
+          "type": "OVERSOLD_BOUNCE",
+          "description": "Oversold condition (RSI: 24.3), potential recovery",
+          "confidence": "Medium"
+        }
+      ],
       "recommendation": {
         "action": "HOLD",
         "adjustment": "Maintain current position",
-        "target_price": 1336.9,
-        "stop_loss": 1349.19,
-        "confidence": "Medium",
+        "target_price": 1342.6,
+        "stop_loss": 1343.18,
+        "confidence": "Low",
         "rationale": "Mixed technical signals"
       },
       "future_outlook": {
         "prediction": "Neutral",
-        "expected_change_6m": "-5% to +5%",
-        "expected_change_1y": "0% to +10%",
-        "confidence": "Medium",
-        "reasoning": "The technical summary indicates a neutral signal with a recent negative weekly change and a low RSI. Lack of significant news flow suggests a period of consolidation. The stock may experience modest fluctuations within a narrow range over the next six months, with a slightly more positive outlook over the longer term if market conditions remain stable."
+        "expected_change_6m": "-2% to +6%",
+        "expected_change_1y": "+3% to +12%",
+        "confidence": "Low",
+        "reasoning": "Oversold RSI near 24 often precedes a relief rally, but lack of catalysts and neutral signal keep risk-reward balanced. Valuations and macro factors will drive the eventual direction more than momentum. Range-bound drift most likely until clearer data emerge."
       }
     },
     "ITC": {
       "basic_data": {
         "symbol": "ITC.NS",
-        "current_price": 408.9,
-        "daily_change": -1.22,
-        "weekly_change": -2.79,
-        "monthly_change": -1.14,
+        "current_price": 404.9,
+        "daily_change": -0.64,
+        "weekly_change": -3.31,
+        "monthly_change": -2.75,
         "volume": {
-          "current": 10085404,
-          "average_20d": 13714234,
-          "ratio": 0.74
+          "current": 5387679,
+          "average_20d": 12670511,
+          "ratio": 0.43
         },
         "price_levels": {
           "high_52w": 427.0,
           "low_52w": 396.2,
-          "distance_from_high": -4.24,
-          "distance_from_low": 3.21
+          "distance_from_high": -5.18,
+          "distance_from_low": 2.2
         },
         "historical_closes": [
-          413.6,
-          414.5,
-          416.85,
           416.35,
           414.1,
           411.45,
@@ -1384,7 +1380,10 @@
           418.75,
           420.35,
           413.95,
-          408.9
+          408.9,
+          408.9,
+          407.5,
+          404.9
         ],
         "sentiment": 0
       },
@@ -1393,8 +1392,8 @@
       "technical_indicators": {
         "signal": "NEUTRAL",
         "score": -2,
-        "rsi": 62.98,
-        "sma_20": 409.81,
+        "rsi": 39.72,
+        "sma_20": 410.9,
         "technical_summary": {
           "price_above_ma": "False",
           "rsi_status": "Neutral",
@@ -1405,41 +1404,38 @@
       "recommendation": {
         "action": "HOLD",
         "adjustment": "Maintain current position",
-        "target_price": 408.9,
-        "stop_loss": 401.61,
+        "target_price": 404.9,
+        "stop_loss": 402.68,
         "confidence": "Medium",
         "rationale": "Mixed technical signals"
       },
       "future_outlook": {
         "prediction": "Neutral",
-        "expected_change_6m": "-3% to +5%",
-        "expected_change_1y": "0% to +10%",
+        "expected_change_6m": "-5% to +5%",
+        "expected_change_1y": "-5% to +8%",
         "confidence": "Medium",
-        "reasoning": "The technical summary indicates a neutral signal and a recent negative weekly change. The RSI suggests the stock is neither overbought nor oversold. Lacking significant news flow limits a strong directional bias, leading to a cautiously optimistic outlook. However, the lack of positive catalysts suggests limited upside potential."
+        "reasoning": "Neutral signal with RSI near 40 suggests limited downside but no catalysts for upside. Absence of news keeps range-bound trading likely. Valuation support plus lack of growth triggers imply modest drift."
       }
     },
     "SBIN": {
       "basic_data": {
         "symbol": "SBIN.NS",
-        "current_price": 957.6,
-        "daily_change": 0.83,
-        "weekly_change": 3.78,
-        "monthly_change": 18.93,
+        "current_price": 960.8,
+        "daily_change": 0.01,
+        "weekly_change": 2.83,
+        "monthly_change": 17.09,
         "volume": {
-          "current": 19154518,
-          "average_20d": 10779568,
-          "ratio": 1.78
+          "current": 11281967,
+          "average_20d": 11327112,
+          "ratio": 1.0
         },
         "price_levels": {
-          "high_52w": 959.3,
-          "low_52w": 790.0,
-          "distance_from_high": -0.18,
-          "distance_from_low": 21.22
+          "high_52w": 971.4,
+          "low_52w": 798.5,
+          "distance_from_high": -1.09,
+          "distance_from_low": 20.33
         },
         "historical_closes": [
-          805.15,
-          804.3,
-          823.45,
           820.6,
           821.85,
           826.55,
@@ -1496,7 +1492,10 @@
           934.35,
           937.0,
           949.7,
-          957.6
+          957.6,
+          957.6,
+          960.75,
+          960.8
         ],
         "sentiment": 0
       },
@@ -1504,60 +1503,57 @@
       "signal": "NEUTRAL",
       "technical_indicators": {
         "signal": "NEUTRAL",
-        "score": 1,
-        "rsi": 88.2,
-        "sma_20": 904.53,
+        "score": 0,
+        "rsi": 87.11,
+        "sma_20": 919.24,
         "technical_summary": {
           "price_above_ma": "True",
           "rsi_status": "Overbought",
-          "volume_status": "High"
+          "volume_status": "Normal"
         }
       },
       "projects": [
         {
           "type": "VALUE_OPPORTUNITY",
-          "description": "Trading 21.2% above 52W low with positive momentum",
+          "description": "Trading 20.3% above 52W low with positive momentum",
           "confidence": "Medium"
         }
       ],
       "recommendation": {
         "action": "HOLD",
         "adjustment": "Maintain current position",
-        "target_price": 957.6,
-        "stop_loss": 886.44,
+        "target_price": 960.8,
+        "stop_loss": 900.86,
         "confidence": "Low",
         "rationale": "Mixed technical signals"
       },
       "future_outlook": {
         "prediction": "Neutral",
-        "expected_change_6m": "0% to +5%",
-        "expected_change_1y": "+5% to +10%",
-        "confidence": "Medium",
-        "reasoning": "The technical signal is neutral, suggesting consolidation. The high RSI indicates the stock may be overbought in the short term, potentially leading to a pullback. With no significant news catalysts, growth is likely to be moderate in the coming year."
+        "expected_change_6m": "-5% to +5%",
+        "expected_change_1y": "-5% to +10%",
+        "confidence": "Low",
+        "reasoning": "RSI at 87 signals extreme overbought conditions, raising near-term correction risk. Absence of catalysts and neutral signal suggest range-bound action. Any upside will likely come from broad market moves rather than stock-specific drivers."
       }
     },
     "LT": {
       "basic_data": {
         "symbol": "LT.NS",
-        "current_price": 3924.4,
-        "daily_change": -1.41,
-        "weekly_change": 0.02,
-        "monthly_change": 7.77,
+        "current_price": 3881.6,
+        "daily_change": 0.0,
+        "weekly_change": -2.66,
+        "monthly_change": 5.3,
         "volume": {
-          "current": 2042881,
-          "average_20d": 1889927,
-          "ratio": 1.08
+          "current": 1262803,
+          "average_20d": 1794229,
+          "ratio": 0.7
         },
         "price_levels": {
           "high_52w": 4062.6,
           "low_52w": 3516.4,
-          "distance_from_high": -3.4,
-          "distance_from_low": 11.6
+          "distance_from_high": -4.46,
+          "distance_from_low": 10.39
         },
         "historical_closes": [
-          3641.6,
-          3607.6,
-          3668.4,
           3686.1,
           3693.7,
           3677.0,
@@ -1614,7 +1610,10 @@
           3987.5,
           4030.9,
           3980.5,
-          3924.4
+          3924.4,
+          3924.4,
+          3881.6,
+          3881.6
         ],
         "sentiment": 0
       },
@@ -1622,11 +1621,11 @@
       "signal": "NEUTRAL",
       "technical_indicators": {
         "signal": "NEUTRAL",
-        "score": 1,
-        "rsi": 68.2,
-        "sma_20": 3870.94,
+        "score": -2,
+        "rsi": 55.3,
+        "sma_20": 3893.89,
         "technical_summary": {
-          "price_above_ma": "True",
+          "price_above_ma": "False",
           "rsi_status": "Neutral",
           "volume_status": "Normal"
         }
@@ -1635,41 +1634,38 @@
       "recommendation": {
         "action": "HOLD",
         "adjustment": "Maintain current position",
-        "target_price": 3924.4,
-        "stop_loss": 3793.52,
-        "confidence": "Low",
+        "target_price": 3881.6,
+        "stop_loss": 3816.01,
+        "confidence": "Medium",
         "rationale": "Mixed technical signals"
       },
       "future_outlook": {
         "prediction": "Neutral",
-        "expected_change_6m": "-2% to +5%",
+        "expected_change_6m": "-3% to +5%",
         "expected_change_1y": "0% to +10%",
         "confidence": "Low",
-        "reasoning": "The technical summary indicates a neutral signal and a high RSI, suggesting the stock might be slightly overbought and could consolidate. The absence of recent news provides little to drive significant price movement. Without any catalysts or negative news, a moderate and uncertain outlook is predicted."
+        "reasoning": "Neutral signal and mid-range RSI with no catalysts from news imply range-bound price action. Mild upside bias over 12 months from sector tailwinds, but volatility risk remains."
       }
     },
     "AXISBANK": {
       "basic_data": {
         "symbol": "AXISBANK.NS",
-        "current_price": 1226.6,
-        "daily_change": -0.58,
-        "weekly_change": -2.19,
-        "monthly_change": 13.98,
+        "current_price": 1224.2,
+        "daily_change": -0.35,
+        "weekly_change": -1.16,
+        "monthly_change": 14.41,
         "volume": {
-          "current": 3299345,
-          "average_20d": 6678709,
-          "ratio": 0.49
+          "current": 2544389,
+          "average_20d": 5943852,
+          "ratio": 0.43
         },
         "price_levels": {
           "high_52w": 1276.1,
           "low_52w": 1042.5,
-          "distance_from_high": -3.88,
-          "distance_from_low": 17.66
+          "distance_from_high": -4.07,
+          "distance_from_low": 17.43
         },
         "historical_closes": [
-          1076.2,
-          1058.1,
-          1073.3,
           1070.0,
           1066.0,
           1068.2,
@@ -1726,7 +1722,10 @@
           1238.6,
           1232.8,
           1233.7,
-          1226.6
+          1226.6,
+          1226.6,
+          1228.5,
+          1224.2
         ],
         "sentiment": 0
       },
@@ -1734,9 +1733,9 @@
       "signal": "NEUTRAL",
       "technical_indicators": {
         "signal": "NEUTRAL",
-        "score": 0,
-        "rsi": 65.58,
-        "sma_20": 1214.63,
+        "score": 1,
+        "rsi": 59.36,
+        "sma_20": 1221.86,
         "technical_summary": {
           "price_above_ma": "True",
           "rsi_status": "Neutral",
@@ -1747,20 +1746,20 @@
       "recommendation": {
         "action": "HOLD",
         "adjustment": "Maintain current position",
-        "target_price": 1226.6,
-        "stop_loss": 1190.34,
+        "target_price": 1224.2,
+        "stop_loss": 1197.42,
         "confidence": "Low",
         "rationale": "Mixed technical signals"
       },
       "future_outlook": {
         "prediction": "Neutral",
         "expected_change_6m": "-3% to +5%",
-        "expected_change_1y": "0% to +10%",
+        "expected_change_1y": "+2% to +10%",
         "confidence": "Low",
-        "reasoning": "The technical summary indicates a neutral signal with a recent negative weekly change, however the RSI of 65.58 is relatively neutral suggesting a possibility of some upward movement. The lack of recent news and a neutral overall score contributes to low confidence in predicting any significant directional change."
+        "reasoning": "RSI near the mid-zone and a neutral signal suggest sideways momentum; the absence of fresh news leaves catalysts limited, so performance will likely track the broader banking index and rate cycles."
       }
     }
   },
-  "forecast_time": "2025-11-05T03:15:00.747850",
-  "last_run": "2025-11-05T03:15:02.812208"
+  "forecast_time": "2025-11-07T09:05:45.366575",
+  "last_run": "2025-11-07T14:35:45.470915"
 }
