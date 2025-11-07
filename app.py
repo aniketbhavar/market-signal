@@ -3,6 +3,8 @@ import json
 import pandas as pd
 import plotly.graph_objects as go
 from datetime import datetime
+import os
+import math
 
 # Page setup
 st.set_page_config(page_title="Market Signal POC", page_icon="📊", layout="wide")
@@ -19,6 +21,11 @@ def load_data():
     except FileNotFoundError:
         with open('signals.json', 'r') as f:
             return json.load(f)
+
+@st.cache_data
+def load_hni_data():
+    """Load HNI shareholders data from CSV"""
+    return pd.read_csv('final_shareholders_with_networth.csv')
 
 # --- VISUALIZATION HELPERS ---
 def create_performance_chart(data, entity_type):
@@ -91,12 +98,6 @@ def main():
     st.title("📊 Market Signal & Portfolio Guidance POC")
     st.markdown("### Real-time Market Analysis for Indices, Sectors & Stocks")
 
-    try:
-        data = load_data()
-    except FileNotFoundError:
-        st.error("⚠️ Please run Day 1 (Data_Ingestion.py), Day 2 (signal_analysis.py), and future_prediction.py first.")
-        return
-
     # Sidebar Navigation
     st.sidebar.header("📋 Navigation")
     view_type = st.sidebar.radio(
@@ -108,7 +109,7 @@ def main():
             "Stocks",
             "Detailed Analysis",
             "Future Predictions",
-             "HNI RECORD" # 👈 New Tab
+            "HNI DATA"  # Fixed: matches the conditional check below
         ]
     )
 
@@ -116,27 +117,18 @@ def main():
         st.cache_data.clear()
         st.rerun()
 
-    st.sidebar.markdown("---")
-    if "analysis_time" in data:
-        st.sidebar.markdown(f"**Last Updated:**  \n{datetime.fromisoformat(data['analysis_time']).strftime('%Y-%m-%d %H:%M:%S')}")
-
-    # CSV filename with timestamp
-    timestamp = datetime.now().strftime("%Y-%m-%d_%I-%M%p")
-    file_name = f"market_signals_{timestamp}.csv"
-    if view_type == "HNI Records":
+    # === HNI DATA VIEW ===
+    if view_type == "HNI DATA":
         st.subheader("💼 HNI Shareholders Database")
-
-       
-        
-        files_in_dir = os.listdir('.')
-        csv_files = [f for f in files_in_dir if f.endswith('.csv')]
-        
         
         try:
             hni_df = load_hni_data()
-           
             
-            # Try to display with available columns
+            # Display column selection based on available columns
+            available_cols = hni_df.columns.tolist()
+            st.markdown(f"**Available columns:** {', '.join(available_cols)}")
+            
+            # Try to display with expected columns
             display_cols = []
             for col in ["Stock", "Shareholder Name", "Category", "Net Worth"]:
                 if col in hni_df.columns:
@@ -148,11 +140,12 @@ def main():
                 st.warning("Expected columns not found. Showing all columns.")
                 display_df = hni_df.copy()
             
-            # display_df.insert(0, "S.No", range(1, len(display_df) + 1))
+            # Add serial number
+            display_df.insert(0, "S.No", range(1, len(display_df) + 1))
 
             # Pagination
             rows_per_page = 20
-            total_pages = math.ceil(len(display_df) / rows_per_page)
+            total_pages = max(1, math.ceil(len(display_df) / rows_per_page))
             page = st.number_input("Page", min_value=1, max_value=total_pages, value=1, key="page_num")
             start = (page - 1) * rows_per_page
             end = start + rows_per_page
@@ -162,6 +155,7 @@ def main():
             st.dataframe(display_df.iloc[start:end], use_container_width=True, height=600)
             st.markdown(f"**Page {page} of {total_pages}** | Total Records: {len(display_df)}")
 
+            # Download button
             st.download_button(
                 "📥 Download HNI CSV", 
                 display_df.to_csv(index=False), 
@@ -169,15 +163,39 @@ def main():
                 "text/csv"
             )
                              
-        except FileNotFoundError as e:
-            st.error(f"⚠️ File 'final_shareholders_with_networth.csv' not found!")
-            st.write(f"Error: {str(e)}")
+        except FileNotFoundError:
+            st.error("⚠️ File 'final_shareholders_with_networth.csv' not found!")
             st.info("💡 Make sure the CSV file is in the same directory as this script.")
+            
+            # Show available CSV files in directory
+            csv_files = [f for f in os.listdir('.') if f.endswith('.csv')]
+            if csv_files:
+                st.write("**CSV files found in current directory:**")
+                for f in csv_files:
+                    st.write(f"- {f}")
+            else:
+                st.write("No CSV files found in current directory.")
+                
         except Exception as e:
             st.error(f"❌ Error loading HNI data: {type(e).__name__}")
             st.write(f"Error details: {str(e)}")
         
         return  # Exit early for HNI view
+
+    # === LOAD MARKET DATA FOR OTHER VIEWS ===
+    try:
+        data = load_data()
+    except FileNotFoundError:
+        st.error("⚠️ Please run Day 1 (Data_Ingestion.py), Day 2 (signal_analysis.py), and future_prediction.py first.")
+        return
+
+    st.sidebar.markdown("---")
+    if "analysis_time" in data:
+        st.sidebar.markdown(f"**Last Updated:**  \n{datetime.fromisoformat(data['analysis_time']).strftime('%Y-%m-%d %H:%M:%S')}")
+
+    # CSV filename with timestamp
+    timestamp = datetime.now().strftime("%Y-%m-%d_%I-%M%p")
+    file_name = f"market_signals_{timestamp}.csv"
 
     # --- VIEW SECTIONS ---
     if view_type == "Overview":
@@ -287,8 +305,6 @@ def main():
         else:
             st.info("No opportunity projects detected for this entity.")
 
-    # --- NEW VIEW: AI Future Predictions ---
-    # === Future Predictions View ===
     elif view_type == "Future Predictions":
         st.subheader("🤖 AI-Based Future Outlook (Next 6 to 12 Months)")
         st.markdown(
