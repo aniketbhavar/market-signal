@@ -3,21 +3,24 @@ import json
 import pandas as pd
 import plotly.graph_objects as go
 from datetime import datetime
-import math
-import os
 
 # Page setup
 st.set_page_config(page_title="Market Signal POC", page_icon="📊", layout="wide")
 
+# --- LOAD DATA ---
 @st.cache_data
 def load_data():
-    with open('signals.json', 'r') as f:
-        return json.load(f)
+    """
+    Try loading AI-enriched data first; if not found, fall back to basic signals.json.
+    """
+    try:
+        with open('signals_enriched.json', 'r') as f:
+            return json.load(f)
+    except FileNotFoundError:
+        with open('signals.json', 'r') as f:
+            return json.load(f)
 
-@st.cache_data
-def load_hni_data():
-    return pd.read_csv("final_shareholders_with_networth.csv")
-
+# --- VISUALIZATION HELPERS ---
 def create_performance_chart(data, entity_type):
     """Bar chart showing weekly change by signal type"""
     items = []
@@ -88,36 +91,38 @@ def main():
     st.title("📊 Market Signal & Portfolio Guidance POC")
     st.markdown("### Real-time Market Analysis for Indices, Sectors & Stocks")
 
-    # Sidebar Navigation - SIMPLIFIED
+    try:
+        data = load_data()
+    except FileNotFoundError:
+        st.error("⚠️ Please run Day 1 (Data_Ingestion.py), Day 2 (signal_analysis.py), and future_prediction.py first.")
+        return
+
+    # Sidebar Navigation
     st.sidebar.header("📋 Navigation")
-    
-    # Debug: Show we're creating the radio button
-    st.sidebar.write("Loading navigation...")
-    
-    view_options = [
-        "Overview",
-        "Indices", 
-        "Sectors",
-        "Stocks",
-        "Detailed Analysis",
-        "Future Predictions",
-        "HNI Records"
-    ]
-    
     view_type = st.sidebar.radio(
         "Select View",
-        options=view_options,
-        index=0
+        [
+            "Overview",
+            "Indices",
+            "Sectors",
+            "Stocks",
+            "Detailed Analysis",
+            "Future Predictions",
+             "HNI RECORD" # 👈 New Tab
+        ]
     )
-    
-    # Show what was selected
-    st.sidebar.success(f"Selected: {view_type}")
 
     if st.sidebar.button("🔄 Refresh Data"):
         st.cache_data.clear()
         st.rerun()
 
-    # === HNI RECORDS VIEW ===
+    st.sidebar.markdown("---")
+    if "analysis_time" in data:
+        st.sidebar.markdown(f"**Last Updated:**  \n{datetime.fromisoformat(data['analysis_time']).strftime('%Y-%m-%d %H:%M:%S')}")
+
+    # CSV filename with timestamp
+    timestamp = datetime.now().strftime("%Y-%m-%d_%I-%M%p")
+    file_name = f"market_signals_{timestamp}.csv"
     if view_type == "HNI Records":
         st.subheader("💼 HNI Shareholders Database")
 
@@ -174,21 +179,7 @@ def main():
         
         return  # Exit early for HNI view
 
-    # === LOAD MARKET DATA FOR OTHER VIEWS ===
-    try:
-        data = load_data()
-    except FileNotFoundError:
-        st.error("⚠️ Please run Day 1 (Data_Ingestion.py) and Day 2 (signal_analysis.py) first.")
-        return
-
-    st.sidebar.markdown("---")
-    st.sidebar.markdown(f"**Last Updated:**  \n{datetime.fromisoformat(data['analysis_time']).strftime('%Y-%m-%d %H:%M:%S')}")
-
-    # CSV filename with timestamp
-    timestamp = datetime.now().strftime("%Y-%m-%d_%I-%M%p")
-    file_name = f"market_signals_{timestamp}.csv"
-
-    # === OVERVIEW VIEW ===
+    # --- VIEW SECTIONS ---
     if view_type == "Overview":
         all_items = list(data.get('indices', {}).values()) + \
                     list(data.get('sectors', {}).values()) + \
@@ -215,7 +206,6 @@ def main():
         st.data_editor(summary_df, use_container_width=True, hide_index=True, height=600)
         st.download_button("📥 Download CSV", summary_df.to_csv(index=False), file_name, "text/csv")
 
-    # === INDICES VIEW ===
     elif view_type == "Indices":
         st.subheader("📊 Indices Performance")
         df = create_summary_table({'indices': data['indices']})
@@ -224,7 +214,6 @@ def main():
         st.data_editor(df, use_container_width=True, hide_index=True, height=600)
         st.download_button("📥 Download CSV", df.to_csv(index=False), file_name, "text/csv")
 
-    # === SECTORS VIEW ===
     elif view_type == "Sectors":
         st.subheader("🏦 Sectoral Performance")
         df = create_summary_table({'sectors': data['sectors']})
@@ -233,6 +222,73 @@ def main():
         st.data_editor(df, use_container_width=True, hide_index=True, height=600)
         st.download_button("📥 Download CSV", df.to_csv(index=False), file_name, "text/csv")
 
+    elif view_type == "Stocks":
+        st.subheader("📈 Stock Performance")
+        df = create_summary_table({'stocks': data['stocks']})
+        df.insert(0, "S.No", range(1, len(df) + 1))
+        st.plotly_chart(create_performance_chart(data, 'stocks'), use_container_width=True)
+        st.data_editor(df, use_container_width=True, hide_index=True, height=600)
+        st.download_button("📥 Download CSV", df.to_csv(index=False), file_name, "text/csv")
+
+    elif view_type == "Detailed Analysis":
+        st.subheader("🔍 Detailed Entity Analysis")
+
+        entity_type = st.selectbox("Select Type", ["Indices", "Sectors", "Stocks"])
+        entity_key = entity_type.lower()
+        selected = st.selectbox(f"Select {entity_type[:-1]}", list(data[entity_key].keys()))
+        analysis = data[entity_key][selected]
+
+        col1, col2, col3 = st.columns(3)
+        col1.metric("Current Price", f"₹{analysis['basic_data']['current_price']:,.2f}",
+                    f"{analysis['basic_data']['daily_change']:+.2f}%")
+        col2.metric("Weekly Change", f"{analysis['basic_data']['weekly_change']:+.2f}%")
+        col3.metric("Signal", analysis['signal'])
+
+        st.markdown("---")
+        rec = analysis['recommendation']
+
+        col1, col2 = st.columns(2)
+        with col1:
+            st.markdown(f"""
+            **Action:** {rec['action']}  
+            **Adjustment:** {rec['adjustment']}  
+            **Confidence:** {rec['confidence']}
+            """)
+        with col2:
+            st.markdown(f"""
+            **Target:** ₹{rec['target_price']:,.2f}  
+            **Stop Loss:** ₹{rec['stop_loss']:,.2f}  
+            **Category:** {analysis['portfolio_category']}
+            """)
+
+        st.info(f"**Rationale:** {rec['rationale']}")
+
+        st.markdown("### 📊 Technical Indicators")
+        tech = analysis['technical_indicators']
+        col1, col2, col3 = st.columns(3)
+        col1.metric("RSI", f"{tech['rsi']:.1f}")
+        col2.metric("20-day SMA", f"₹{tech['sma_20']:,.2f}")
+        col3.metric("Score", tech['score'])
+
+        # --- AI Future Outlook (Optional inline display) ---
+        if "future_outlook" in analysis:
+            outlook = analysis["future_outlook"]
+            st.markdown("### 🤖 AI Future Outlook (Gemini 1.5 Flash)")
+            st.markdown(f"""
+            **Prediction:** {outlook.get('prediction', 'N/A')}  
+            **Expected Change:** {outlook.get('expected_change', 'N/A')}  
+            **Confidence:** {outlook.get('confidence', 'N/A')}  
+            **Reasoning:** {outlook.get('reasoning', 'N/A')}
+            """)
+
+        if analysis['projects']:
+            st.markdown("### 🎯 Detected Projects")
+            display_projects(analysis['projects'])
+        else:
+            st.info("No opportunity projects detected for this entity.")
+
+    # --- NEW VIEW: AI Future Predictions ---
+    # === Future Predictions View ===
     elif view_type == "Future Predictions":
         st.subheader("🤖 AI-Based Future Outlook (Next 6 to 12 Months)")
         st.markdown(
@@ -288,62 +344,7 @@ def main():
 
         st.markdown("---")
         st.caption("🕒 Last updated: " + str(data.get("forecast_time", "N/A")))
-        # === HNI RECORDS VIEW ===
-    
-    # === STOCKS VIEW ===
-    elif view_type == "Stocks":
-        st.subheader("📈 Stock Performance")
-        df = create_summary_table({'stocks': data['stocks']})
-        df.insert(0, "S.No", range(1, len(df) + 1))
-        st.plotly_chart(create_performance_chart(data, 'stocks'), use_container_width=True)
-        st.data_editor(df, use_container_width=True, hide_index=True, height=600)
-        st.download_button("📥 Download CSV", df.to_csv(index=False), file_name, "text/csv")
 
-    # === DETAILED ANALYSIS VIEW ===
-    elif view_type == "Detailed Analysis":
-        st.subheader("🔍 Detailed Entity Analysis")
-        entity_type = st.selectbox("Select Type", ["Indices", "Sectors", "Stocks"])
-        entity_key = entity_type.lower()
-        selected = st.selectbox(f"Select {entity_type[:-1]}", list(data[entity_key].keys()))
-        analysis = data[entity_key][selected]
-
-        col1, col2, col3 = st.columns(3)
-        col1.metric("Current Price", f"₹{analysis['basic_data']['current_price']:,.2f}",
-                    f"{analysis['basic_data']['daily_change']:+.2f}%")
-        col2.metric("Weekly Change", f"{analysis['basic_data']['weekly_change']:+.2f}%")
-        col3.metric("Signal", analysis['signal'])
-
-        st.markdown("---")
-        rec = analysis['recommendation']
-
-        col1, col2 = st.columns(2)
-        with col1:
-            st.markdown(f"""
-            **Action:** {rec['action']}  
-            **Adjustment:** {rec['adjustment']}  
-            **Confidence:** {rec['confidence']}
-            """)
-        with col2:
-            st.markdown(f"""
-            **Target:** ₹{rec['target_price']:,.2f}  
-            **Stop Loss:** ₹{rec['stop_loss']:,.2f}  
-            **Category:** {analysis['portfolio_category']}
-            """)
-
-        st.info(f"**Rationale:** {rec['rationale']}")
-
-        st.markdown("### 📊 Technical Indicators")
-        tech = analysis['technical_indicators']
-        col1, col2, col3 = st.columns(3)
-        col1.metric("RSI", f"{tech['rsi']:.1f}")
-        col2.metric("20-day SMA", f"₹{tech['sma_20']:,.2f}")
-        col3.metric("Score", tech['score'])
-
-        if analysis['projects']:
-            st.markdown("### 🎯 Detected Projects")
-            display_projects(analysis['projects'])
-        else:
-            st.info("No opportunity projects detected for this entity.")
 
 if __name__ == "__main__":
     main()
