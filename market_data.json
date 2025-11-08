@@ -2,20 +2,20 @@
   "indices": {
     "NIFTY_50": {
       "symbol": "^NSEI",
-      "current_price": 25509.7,
-      "daily_change": -0.34,
-      "weekly_change": -1.64,
-      "monthly_change": 3.76,
+      "current_price": 25492.3,
+      "daily_change": -0.07,
+      "weekly_change": -2.16,
+      "monthly_change": 3.69,
       "volume": {
-        "current": 371900,
-        "average_20d": 285510,
-        "ratio": 1.3
+        "current": 305600,
+        "average_20d": 289420,
+        "ratio": 1.06
       },
       "price_levels": {
         "high_52w": 26104.2,
         "low_52w": 24347.45,
-        "distance_from_high": -2.28,
-        "distance_from_low": 4.77
+        "distance_from_high": -2.34,
+        "distance_from_low": 4.7
       },
       "historical_closes": [
         24585.05,
@@ -76,26 +76,27 @@
         25722.1,
         25763.35,
         25597.65,
-        25509.7
+        25509.7,
+        25492.3
       ],
       "sentiment": 0
     },
     "SENSEX": {
       "symbol": "^BSESN",
-      "current_price": 83311.01,
-      "daily_change": -0.18,
-      "weekly_change": -1.56,
-      "monthly_change": 3.36,
+      "current_price": 83216.28,
+      "daily_change": -0.11,
+      "weekly_change": -2.1,
+      "monthly_change": 3.24,
       "volume": {
-        "current": 17900,
-        "average_20d": 13715,
-        "ratio": 1.31
+        "current": 15900,
+        "average_20d": 13750,
+        "ratio": 1.16
       },
       "price_levels": {
         "high_52w": 85290.06,
         "low_52w": 79741.76,
-        "distance_from_high": -2.32,
-        "distance_from_low": 4.48
+        "distance_from_high": -2.43,
+        "distance_from_low": 4.36
       },
       "historical_closes": [
         80604.08,
@@ -156,7 +157,8 @@
         83938.71,
         83978.49,
         83459.15,
-        83311.01
+        83311.01,
+        83216.28
       ],
       "sentiment": 0
     }
@@ -164,20 +166,20 @@
   "sectors": {
     "BANK_NIFTY": {
       "symbol": "^NSEBANK",
-      "current_price": 57827.05,
-      "daily_change": -0.47,
-      "weekly_change": -0.49,
-      "monthly_change": 4.17,
+      "current_price": 57876.8,
+      "daily_change": 0.56,
+      "weekly_change": -0.87,
+      "monthly_change": 4.26,
       "volume": {
-        "current": 168600,
-        "average_20d": 166685,
-        "ratio": 1.01
+        "current": 142400,
+        "average_20d": 167960,
+        "ratio": 0.85
       },
       "price_levels": {
         "high_52w": 58577.5,
         "low_52w": 53561.75,
-        "distance_from_high": -1.28,
-        "distance_from_low": 7.96
+        "distance_from_high": -1.2,
+        "distance_from_low": 8.06
       },
       "historical_closes": [
         55510.75,
@@ -237,26 +239,28 @@
         58031.1,
         57776.35,
         58101.45,
-        57827.05
+        57827.05,
+        57554.25,
+        57876.8
       ],
       "sentiment": 0
     },
     "NIFTY_IT": {
       "symbol": "^CNXIT",
-      "current_price": 35337.6,
-      "daily_change": 0.18,
-      "weekly_change": -1.46,
-      "monthly_change": 2.3,
+      "current_price": 35117.65,
+      "daily_change": -0.62,
+      "weekly_change": -2.69,
+      "monthly_change": 1.66,
       "volume": {
-        "current": 25100,
-        "average_20d": 26645,
-        "ratio": 0.94
+        "current": 21700,
+        "average_20d": 26565,
+        "ratio": 0.82
       },
       "price_levels": {
         "high_52w": 37064.95,
         "low_52w": 33432.1,
-        "distance_from_high": -4.66,
-        "distance_from_low": 5.7
+        "distance_from_high": -5.25,
+        "distance_from_low": 5.04
       },
       "historical_closes": [
         34544.65,
@@ -317,26 +321,27 @@
         35712.35,
         35653.1,
         35274.55,
-        35337.6
+        35337.6,
+        35117.65
       ],
       "sentiment": 0
     },
     "NIFTY_PHARMA": {
       "symbol": "^CNXPHARMA",
-      "current_price": 22250.55,
-      "daily_change": -0.38,
-      "weekly_change": -0.0,
-      "monthly_change": 2.99,
+      "current_price": 22169.8,
+      "daily_change": -0.36,
+      "weekly_change": -1.16,
+      "monthly_change": 2.62,
       "volume": {
-        "current": 35755100,
-        "average_20d": 19090720,
-        "ratio": 1.87
+        "current": 18219600,
+        "average_20d": 19290965,
+        "ratio": 0.94
       },
       "price_levels": {
         "high_52w": 22716.9,
         "low_52w": 21324.05,
-        "distance_from_high": -2.05,
-        "distance_from_low": 4.34
+        "distance_from_high": -2.41,
+        "distance_from_low": 3.97
       },
       "historical_closes": [
         21604.65,
@@ -397,26 +402,27 @@
         22175.4,
         22442.6,
         22334.45,
-        22250.55
+        22250.55,
+        22169.8
       ],
       "sentiment": 0
     },
     "NIFTY_AUTO": {
       "symbol": "^CNXAUTO",
-      "current_price": 26626.5,
-      "daily_change": 0.06,
-      "weekly_change": -1.92,
-      "monthly_change": 12.24,
+      "current_price": 26779.55,
+      "daily_change": 0.57,
+      "weekly_change": -0.63,
+      "monthly_change": 12.88,
       "volume": {
-        "current": 464000,
-        "average_20d": 460365,
-        "ratio": 1.01
+        "current": 277800,
+        "average_20d": 451335,
+        "ratio": 0.62
       },
       "price_levels": {
         "high_52w": 27725.75,
         "low_52w": 23440.2,
-        "distance_from_high": -3.96,
-        "distance_from_low": 13.59
+        "distance_from_high": -3.41,
+        "distance_from_low": 14.25
       },
       "historical_closes": [
         23723.75,
@@ -477,26 +483,27 @@
         26809.85,
         26841.8,
         26610.05,
-        26626.5
+        26626.5,
+        26779.55
       ],
       "sentiment": 0
     },
     "NIFTY_FMCG": {
       "symbol": "^CNXFMCG",
-      "current_price": 55711.75,
-      "daily_change": -0.19,
-      "weekly_change": -0.71,
-      "monthly_change": 0.73,
+      "current_price": 55437.2,
+      "daily_change": -0.49,
+      "weekly_change": -2.08,
+      "monthly_change": 0.23,
       "volume": {
-        "current": 30800,
-        "average_20d": 33415,
-        "ratio": 0.92
+        "current": 23800,
+        "average_20d": 33360,
+        "ratio": 0.71
       },
       "price_levels": {
         "high_52w": 58485.05,
         "low_52w": 54142.3,
-        "distance_from_high": -4.74,
-        "distance_from_low": 2.9
+        "distance_from_high": -5.21,
+        "distance_from_low": 2.39
       },
       "historical_closes": [
         55309.9,
@@ -557,7 +564,8 @@
         56208.5,
         56153.7,
         55815.6,
-        55711.75
+        55711.75,
+        55437.2
       ],
       "sentiment": 0
     }
@@ -565,23 +573,22 @@
   "stocks": {
     "HDFCBANK": {
       "symbol": "HDFCBANK.NS",
-      "current_price": 984.65,
-      "daily_change": -0.06,
-      "weekly_change": -2.3,
-      "monthly_change": -1.32,
+      "current_price": 982.3,
+      "daily_change": -0.24,
+      "weekly_change": -1.59,
+      "monthly_change": -0.27,
       "volume": {
-        "current": 22279516,
-        "average_20d": 19926265,
-        "ratio": 1.12
+        "current": 15004568,
+        "average_20d": 19907946,
+        "ratio": 0.75
       },
       "price_levels": {
         "high_52w": 1020.5,
         "low_52w": 939.1,
-        "distance_from_high": -3.51,
-        "distance_from_low": 4.85
+        "distance_from_high": -3.74,
+        "distance_from_low": 4.6
       },
       "historical_closes": [
-        997.8,
         984.95,
         990.15,
         995.55,
@@ -640,29 +647,29 @@
         992.65,
         985.25,
         985.25,
-        984.65
+        984.65,
+        982.3
       ],
       "sentiment": 0
     },
     "INFY": {
       "symbol": "INFY.NS",
-      "current_price": 1466.7,
-      "daily_change": -0.08,
-      "weekly_change": -2.89,
-      "monthly_change": 2.7,
+      "current_price": 1476.8,
+      "daily_change": 0.69,
+      "weekly_change": -1.14,
+      "monthly_change": 3.7,
       "volume": {
-        "current": 7944752,
-        "average_20d": 7239343,
-        "ratio": 1.1
+        "current": 8765759,
+        "average_20d": 7326194,
+        "ratio": 1.2
       },
       "price_levels": {
         "high_52w": 1555.0,
         "low_52w": 1414.0,
-        "distance_from_high": -5.68,
-        "distance_from_low": 3.73
+        "distance_from_high": -5.03,
+        "distance_from_low": 4.44
       },
       "historical_closes": [
-        1428.2,
         1424.1,
         1426.6,
         1447.7,
@@ -721,29 +728,29 @@
         1485.5,
         1467.9,
         1467.9,
-        1466.7
+        1466.7,
+        1476.8
       ],
       "sentiment": 0
     },
     "RELIANCE": {
       "symbol": "RELIANCE.NS",
-      "current_price": 1496.1,
-      "daily_change": 1.56,
-      "weekly_change": -0.54,
-      "monthly_change": 7.93,
+      "current_price": 1478.0,
+      "daily_change": -1.21,
+      "weekly_change": -0.71,
+      "monthly_change": 7.07,
       "volume": {
-        "current": 16772678,
-        "average_20d": 11361917,
-        "ratio": 1.48
+        "current": 7821765,
+        "average_20d": 11311674,
+        "ratio": 0.69
       },
       "price_levels": {
         "high_52w": 1508.3,
         "low_52w": 1340.6,
-        "distance_from_high": -0.81,
-        "distance_from_low": 11.6
+        "distance_from_high": -2.01,
+        "distance_from_low": 10.25
       },
       "historical_closes": [
-        1386.2,
         1380.4,
         1382.6,
         1373.8,
@@ -802,29 +809,29 @@
         1484.7,
         1473.1,
         1473.1,
-        1496.1
+        1496.1,
+        1478.0
       ],
       "sentiment": 0
     },
     "TCS": {
       "symbol": "TCS.NS",
-      "current_price": 2990.2,
-      "daily_change": -0.88,
-      "weekly_change": -3.07,
-      "monthly_change": -1.66,
+      "current_price": 2991.8,
+      "daily_change": -0.63,
+      "weekly_change": -1.43,
+      "monthly_change": -1.44,
       "volume": {
-        "current": 2670720,
-        "average_20d": 3329031,
-        "ratio": 0.8
+        "current": 1830520,
+        "average_20d": 3027886,
+        "ratio": 0.6
       },
       "price_levels": {
         "high_52w": 3203.0,
         "low_52w": 2866.6,
-        "distance_from_high": -6.64,
-        "distance_from_low": 4.31
+        "distance_from_high": -6.59,
+        "distance_from_low": 4.37
       },
       "historical_closes": [
-        3040.8,
         3035.4,
         3036.2,
         3022.3,
@@ -881,29 +888,31 @@
         3035.3,
         3058.0,
         3016.8,
-        2990.2
+        2990.2,
+        2990.2,
+        3010.9,
+        2991.8
       ],
       "sentiment": 0
     },
     "ICICIBANK": {
       "symbol": "ICICIBANK.NS",
-      "current_price": 1320.4,
-      "daily_change": -1.23,
-      "weekly_change": -3.65,
-      "monthly_change": -8.09,
+      "current_price": 1343.0,
+      "daily_change": 1.71,
+      "weekly_change": -1.42,
+      "monthly_change": -5.56,
       "volume": {
-        "current": 24221853,
-        "average_20d": 13081593,
-        "ratio": 1.85
+        "current": 7719245,
+        "average_20d": 13072077,
+        "ratio": 0.59
       },
       "price_levels": {
         "high_52w": 1452.4,
         "low_52w": 1317.4,
-        "distance_from_high": -9.09,
-        "distance_from_low": 0.23
+        "distance_from_high": -7.53,
+        "distance_from_low": 1.94
       },
       "historical_closes": [
-        1436.6,
         1422.0,
         1420.8,
         1427.3,
@@ -962,29 +971,29 @@
         1346.4,
         1336.9,
         1336.9,
-        1320.4
+        1320.4,
+        1343.0
       ],
       "sentiment": 0
     },
     "ITC": {
       "symbol": "ITC.NS",
-      "current_price": 407.5,
-      "daily_change": -0.34,
-      "weekly_change": -3.34,
-      "monthly_change": -2.24,
+      "current_price": 404.05,
+      "daily_change": -0.85,
+      "weekly_change": -3.51,
+      "monthly_change": -2.95,
       "volume": {
-        "current": 10095563,
-        "average_20d": 13183940,
-        "ratio": 0.77
+        "current": 8411611,
+        "average_20d": 12821707,
+        "ratio": 0.66
       },
       "price_levels": {
         "high_52w": 427.0,
         "low_52w": 396.2,
-        "distance_from_high": -4.57,
-        "distance_from_low": 2.85
+        "distance_from_high": -5.37,
+        "distance_from_low": 1.98
       },
       "historical_closes": [
-        416.85,
         416.35,
         414.1,
         411.45,
@@ -1043,29 +1052,29 @@
         413.95,
         408.9,
         408.9,
-        407.5
+        407.5,
+        404.05
       ],
       "sentiment": 0
     },
     "SBIN": {
       "symbol": "SBIN.NS",
-      "current_price": 960.75,
-      "daily_change": 0.33,
-      "weekly_change": 2.23,
-      "monthly_change": 16.67,
+      "current_price": 955.85,
+      "daily_change": -0.51,
+      "weekly_change": 2.3,
+      "monthly_change": 16.48,
       "volume": {
-        "current": 23088096,
-        "average_20d": 11114038,
-        "ratio": 2.08
+        "current": 13371323,
+        "average_20d": 11431580,
+        "ratio": 1.17
       },
       "price_levels": {
         "high_52w": 971.4,
         "low_52w": 798.5,
-        "distance_from_high": -1.1,
-        "distance_from_low": 20.32
+        "distance_from_high": -1.6,
+        "distance_from_low": 19.71
       },
       "historical_closes": [
-        823.45,
         820.6,
         821.85,
         826.55,
@@ -1124,29 +1133,29 @@
         949.7,
         957.6,
         957.6,
-        960.75
+        960.75,
+        955.85
       ],
       "sentiment": 0
     },
     "LT": {
       "symbol": "LT.NS",
-      "current_price": 3881.6,
-      "daily_change": -1.09,
-      "weekly_change": -1.93,
-      "monthly_change": 5.81,
+      "current_price": 3882.5,
+      "daily_change": 0.02,
+      "weekly_change": -2.63,
+      "monthly_change": 5.33,
       "volume": {
-        "current": 1749063,
-        "average_20d": 1822451,
-        "ratio": 0.96
+        "current": 1577294,
+        "average_20d": 1809953,
+        "ratio": 0.87
       },
       "price_levels": {
         "high_52w": 4062.6,
         "low_52w": 3516.4,
-        "distance_from_high": -4.46,
-        "distance_from_low": 10.39
+        "distance_from_high": -4.43,
+        "distance_from_low": 10.41
       },
       "historical_closes": [
-        3668.4,
         3686.1,
         3693.7,
         3677.0,
@@ -1205,29 +1214,29 @@
         3980.5,
         3924.4,
         3924.4,
-        3881.6
+        3881.6,
+        3882.5
       ],
       "sentiment": 0
     },
     "AXISBANK": {
       "symbol": "AXISBANK.NS",
-      "current_price": 1228.5,
-      "daily_change": 0.15,
-      "weekly_change": -1.63,
-      "monthly_change": 14.46,
+      "current_price": 1222.8,
+      "daily_change": -0.46,
+      "weekly_change": -1.28,
+      "monthly_change": 14.28,
       "volume": {
-        "current": 3733721,
-        "average_20d": 6176365,
-        "ratio": 0.6
+        "current": 3461466,
+        "average_20d": 5989706,
+        "ratio": 0.58
       },
       "price_levels": {
         "high_52w": 1276.1,
         "low_52w": 1042.5,
-        "distance_from_high": -3.73,
-        "distance_from_low": 17.84
+        "distance_from_high": -4.18,
+        "distance_from_low": 17.29
       },
       "historical_closes": [
-        1073.3,
         1070.0,
         1066.0,
         1068.2,
@@ -1286,11 +1295,12 @@
         1233.7,
         1226.6,
         1226.6,
-        1228.5
+        1228.5,
+        1222.8
       ],
       "sentiment": 0
     }
   },
-  "fetch_time": "2025-11-07T10:57:25.898314",
-  "last_run": "2025-11-07T10:58:35.019271"
+  "fetch_time": "2025-11-08T06:27:20.472882",
+  "last_run": "2025-11-08T06:28:15.740277"
 }
