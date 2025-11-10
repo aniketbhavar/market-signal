@@ -1,5 +1,5 @@
 {
-  "analysis_time": "2025-11-09T06:28:08.759551",
+  "analysis_time": "2025-11-10T06:33:10.811999",
   "indices": {
     "NIFTY_50": {
       "basic_data": {
@@ -7,7 +7,7 @@
         "current_price": 25492.3,
         "daily_change": -0.07,
         "weekly_change": -2.16,
-        "monthly_change": 3.69,
+        "monthly_change": 4.1,
         "volume": {
           "current": 305600,
           "average_20d": 289420,
@@ -15,12 +15,11 @@
         },
         "price_levels": {
           "high_52w": 26104.2,
-          "low_52w": 24347.45,
+          "low_52w": 24404.7,
           "distance_from_high": -2.34,
-          "distance_from_low": 4.7
+          "distance_from_low": 4.46
         },
         "historical_closes": [
-          24585.05,
           24487.4,
           24619.35,
           24631.3,
@@ -112,7 +111,7 @@
         "current_price": 83216.28,
         "daily_change": -0.11,
         "weekly_change": -2.1,
-        "monthly_change": 3.24,
+        "monthly_change": 3.71,
         "volume": {
           "current": 15900,
           "average_20d": 13750,
@@ -125,7 +124,6 @@
           "distance_from_low": 4.36
         },
         "historical_closes": [
-          80604.08,
           80235.59,
           80539.91,
           80597.66,
@@ -219,7 +217,7 @@
         "current_price": 57876.8,
         "daily_change": 0.56,
         "weekly_change": -0.87,
-        "monthly_change": 4.26,
+        "monthly_change": 5.15,
         "volume": {
           "current": 142400,
           "average_20d": 167960,
@@ -232,7 +230,6 @@
           "distance_from_low": 8.06
         },
         "historical_closes": [
-          55510.75,
           55043.7,
           55181.45,
           55341.85,
@@ -324,7 +321,7 @@
         "current_price": 35117.65,
         "daily_change": -0.62,
         "weekly_change": -2.69,
-        "monthly_change": 1.66,
+        "monthly_change": 1.28,
         "volume": {
           "current": 21700,
           "average_20d": 26565,
@@ -337,7 +334,6 @@
           "distance_from_low": 5.04
         },
         "historical_closes": [
-          34544.65,
           34674.3,
           34692.95,
           34833.2,
@@ -429,7 +425,7 @@
         "current_price": 22169.8,
         "daily_change": -0.36,
         "weekly_change": -1.16,
-        "monthly_change": 2.62,
+        "monthly_change": 1.91,
         "volume": {
           "current": 18219600,
           "average_20d": 19290965,
@@ -437,12 +433,11 @@
         },
         "price_levels": {
           "high_52w": 22716.9,
-          "low_52w": 21324.05,
+          "low_52w": 21365.9,
           "distance_from_high": -2.41,
-          "distance_from_low": 3.97
+          "distance_from_low": 3.76
         },
         "historical_closes": [
-          21604.65,
           21753.5,
           22130.3,
           22151.85,
@@ -534,7 +529,7 @@
         "current_price": 26779.55,
         "daily_change": 0.57,
         "weekly_change": -0.63,
-        "monthly_change": 12.88,
+        "monthly_change": 12.25,
         "volume": {
           "current": 277800,
           "average_20d": 451335,
@@ -542,12 +537,11 @@
         },
         "price_levels": {
           "high_52w": 27725.75,
-          "low_52w": 23440.2,
+          "low_52w": 23732.45,
           "distance_from_high": -3.41,
-          "distance_from_low": 14.25
+          "distance_from_low": 12.84
         },
         "historical_closes": [
-          23723.75,
           23856.6,
           24122.65,
           24118.8,
@@ -639,7 +633,7 @@
         "current_price": 55437.2,
         "daily_change": -0.49,
         "weekly_change": -2.08,
-        "monthly_change": 0.23,
+        "monthly_change": 0.73,
         "volume": {
           "current": 23800,
           "average_20d": 33360,
@@ -652,7 +646,6 @@
           "distance_from_low": 2.39
         },
         "historical_closes": [
-          55309.9,
           55034.45,
           55010.15,
           54656.3,
@@ -849,7 +842,7 @@
         "expected_change_6m": "-5% to +5%",
         "expected_change_1y": "0% to +10%",
         "confidence": "Medium",
-        "reasoning": "The technical summary indicates a neutral signal with recent negative weekly performance. The RSI of 35.46 suggests the stock is approaching oversold territory, which could offer some support. The lack of recent news makes it difficult to project significant catalysts for movement, hence a neutral outlook with potential for modest gains over a longer timeframe."
+        "reasoning": "The technical summary indicates a neutral signal and a negative score. The RSI of 35.46 suggests the stock is approaching oversold territory but hasn't reached it yet. Absence of recent news makes predicting a strong trend difficult, hence a neutral to slightly positive outlook is expected."
       }
     },
     "INFY": {
@@ -866,9 +859,9 @@
         },
         "price_levels": {
           "high_52w": 1555.0,
-          "low_52w": 1414.0,
+          "low_52w": 1421.0,
           "distance_from_high": -5.03,
-          "distance_from_low": 4.44
+          "distance_from_low": 3.93
         },
         "historical_closes": [
           1424.1,
@@ -958,10 +951,10 @@
       },
       "future_outlook": {
         "prediction": "Neutral",
-        "expected_change_6m": "-3% to +5%",
+        "expected_change_6m": "-5% to +5%",
         "expected_change_1y": "0% to +10%",
         "confidence": "Medium",
-        "reasoning": "The technical summary indicates a neutral outlook with a recent minor decline and an RSI near neutral levels. The lack of significant news suggests the stock will likely trade sideways. Longer-term performance will depend on broader market trends and potential fundamental developments not yet apparent."
+        "reasoning": "The technical summary indicates a neutral signal and the RSI suggests the stock is neither overbought nor oversold. The lack of significant news suggests the stock price may consolidate. Without catalysts, performance is expected to be range-bound, though potential for sector-related upside exists."
       }
     },
     "RELIANCE": {
@@ -1073,7 +1066,7 @@
         "expected_change_6m": "-2% to +5%",
         "expected_change_1y": "0% to +10%",
         "confidence": "Low",
-        "reasoning": "The technical summary shows a neutral signal and a recent slight weekly decrease. The RSI of 65.58 suggests the stock is neither overbought nor oversold. The lack of recent news indicates a lack of catalysts, suggesting a sideways or slightly positive trend."
+        "reasoning": "The technical summary indicates a neutral signal with a recent slight negative weekly change. The RSI is relatively high, suggesting the stock may be approaching overbought territory. The absence of recent news limits the ability to make a strong directional prediction; therefore, a conservative outlook is adopted."
       }
     },
     "TCS": {
@@ -1184,8 +1177,8 @@
         "prediction": "Neutral",
         "expected_change_6m": "-2% to +5%",
         "expected_change_1y": "0% to +10%",
-        "confidence": "Low",
-        "reasoning": "The technical summary indicates a neutral signal and a recent slight negative weekly change. The absence of significant news provides limited directional catalysts. The RSI is near neutral, suggesting neither overbought nor oversold conditions, supporting a sideways trading pattern."
+        "confidence": "Medium",
+        "reasoning": "The technical summary indicates a neutral signal and a recent slight negative weekly change. The absence of significant news suggests the stock is likely to trade sideways. The RSI of 54.36 shows the stock is neither overbought nor oversold. Lacking any catalysts, we project moderate gains over the next year."
       }
     },
     "ICICIBANK": {
@@ -1303,7 +1296,7 @@
         "expected_change_6m": "-5% to -10%",
         "expected_change_1y": "-10% to -15%",
         "confidence": "Medium",
-        "reasoning": "The technical summary indicates a neutral signal but with a low score and oversold conditions (RSI 24.51). The lack of positive news suggests a lack of catalysts for upward movement. The recent weekly change of -1.42% and the oversold RSI point to continued downward pressure in the near term."
+        "reasoning": "The technical summary indicates a neutral signal with a low score and oversold conditions (RSI 24.51). The negative weekly change and lack of positive news suggest continued downward pressure. The absence of catalysts limits the potential for significant upward movement in the short to medium term."
       }
     },
     "ITC": {
@@ -1415,7 +1408,7 @@
         "expected_change_6m": "-5% to +5%",
         "expected_change_1y": "0% to +10%",
         "confidence": "Medium",
-        "reasoning": "The technical summary indicates a neutral signal with a recent negative weekly change and a low RSI, suggesting potential for further downward pressure or consolidation. The lack of recent news provides no immediate catalysts for significant price movement. Considering these factors, a neutral to slightly positive outlook is expected over the next 6-12 months."
+        "reasoning": "The technical summary indicates a neutral signal with recent negative price movement and a low RSI, suggesting potential for further consolidation. The lack of recent news provides little to guide future performance. Therefore, a sideways to slightly positive trend is anticipated, assuming no significant catalysts emerge."
       }
     },
     "SBIN": {
@@ -1532,8 +1525,8 @@
         "prediction": "Neutral",
         "expected_change_6m": "0% to +5%",
         "expected_change_1y": "+5% to +10%",
-        "confidence": "Low",
-        "reasoning": "The technical summary indicates a neutral signal, but the high RSI suggests the stock is overbought. The lack of recent news makes it difficult to assess any significant catalysts. The stock price could remain range-bound with limited upside potential in the near term."
+        "confidence": "Medium",
+        "reasoning": "The technical summary indicates a neutral signal, however, the RSI of 82.89 suggests overbought conditions, potentially limiting short-term gains. Absence of recent news makes it difficult to assess specific catalysts. Moderate sector growth is anticipated, suggesting modest upward potential over the longer term."
       }
     },
     "LT": {
@@ -1644,8 +1637,8 @@
         "prediction": "Neutral",
         "expected_change_6m": "-5% to +5%",
         "expected_change_1y": "0% to +10%",
-        "confidence": "Low",
-        "reasoning": "The technical summary indicates a neutral signal with a recent negative weekly change, however the RSI is relatively neutral. The lack of recent news flow makes it difficult to predict a strong directional move. Given the lack of positive catalysts, the price is likely to trade sideways, with a slight upside potential depending on overall market conditions."
+        "confidence": "Medium",
+        "reasoning": "The technical summary indicates a neutral stance with a recent negative weekly change. The RSI is hovering around neutral. The lack of significant news suggests the stock price will likely trade sideways with limited volatility in the near term, with a slight possibility of positive movement in the longer term."
       }
     },
     "AXISBANK": {
@@ -1757,10 +1750,10 @@
         "expected_change_6m": "-2% to +5%",
         "expected_change_1y": "+0% to +10%",
         "confidence": "Low",
-        "reasoning": "The technical summary indicates a neutral signal with a recent slight negative weekly change and RSI suggesting moderate momentum. The lack of significant news prevents a strong directional prediction. Therefore, the stock is expected to consolidate within a narrow range, with possible slight gains depending on broader market trends."
+        "reasoning": "The technical summary indicates a neutral signal with a recent minor decline. An RSI of 58.72 suggests neither overbought nor oversold conditions. Lack of significant news flow leaves future movement uncertain, suggesting a sideways trend with potential for slight gains."
       }
     }
   },
-  "forecast_time": "2025-11-09T06:28:46.009147",
-  "last_run": "2025-11-09T06:28:48.089577"
+  "forecast_time": "2025-11-10T06:33:47.708943",
+  "last_run": "2025-11-10T06:33:49.784486"
 }
