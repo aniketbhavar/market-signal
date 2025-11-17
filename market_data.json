@@ -420,9 +420,9 @@
       },
       "price_levels": {
         "high_52w": 27725.75,
-        "low_52w": 24782.3,
+        "low_52w": 24891.75,
         "distance_from_high": -1.75,
-        "distance_from_low": 9.92
+        "distance_from_low": 9.43
       },
       "historical_closes": [
         25456.7,
@@ -907,9 +907,9 @@
         "ratio": 0.72
       },
       "price_levels": {
-        "high_52w": 1452.4,
+        "high_52w": 1447.8,
         "low_52w": 1317.4,
-        "distance_from_high": -5.47,
+        "distance_from_high": -5.17,
         "distance_from_low": 4.22
       },
       "historical_closes": [
@@ -1301,6 +1301,6 @@
       "sentiment": 0
     }
   },
-  "fetch_time": "2025-11-16T06:28:52.630614",
-  "last_run": "2025-11-16T06:29:47.330899"
+  "fetch_time": "2025-11-17T06:32:07.764324",
+  "last_run": "2025-11-17T06:33:00.869037"
 }

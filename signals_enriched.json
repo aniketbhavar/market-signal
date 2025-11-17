@@ -1,5 +1,5 @@
 {
-  "analysis_time": "2025-11-16T06:29:08.108351",
+  "analysis_time": "2025-11-17T06:32:18.658070",
   "indices": {
     "NIFTY_50": {
       "basic_data": {
@@ -548,9 +548,9 @@
         },
         "price_levels": {
           "high_52w": 27725.75,
-          "low_52w": 24782.3,
+          "low_52w": 24891.75,
           "distance_from_high": -1.75,
-          "distance_from_low": 9.92
+          "distance_from_low": 9.43
         },
         "historical_closes": [
           25456.7,
@@ -861,7 +861,7 @@
         "expected_change_6m": "-2% to +5%",
         "expected_change_1y": "0% to +10%",
         "confidence": "Low",
-        "reasoning": "The technical summary indicates a neutral signal and a low RSI, suggesting the stock is neither overbought nor oversold. The lack of recent news provides no catalysts to significantly move the stock price. The low confidence reflects the absence of recent information to analyze performance and the market sentiment."
+        "reasoning": "The technical summary indicates a neutral signal and a low RSI, suggesting neither strong buying nor selling pressure. The lack of recent news provides limited catalysts for significant price movement. Therefore, we anticipate a sideways trend with potential for slight gains over the next year."
       }
     },
     "INFY": {
@@ -973,7 +973,7 @@
         "expected_change_6m": "-2% to +5%",
         "expected_change_1y": "0% to +10%",
         "confidence": "Low",
-        "reasoning": "The technical summary indicates a neutral signal with a recent weekly gain and an RSI close to neutral territory. The lack of significant news suggests the stock may trade sideways.  Given the mixed signals and absence of catalysts, we expect a modest range-bound performance."
+        "reasoning": "The technical summary indicates a neutral signal with an RSI near neutral levels. The lack of recent news suggests no significant catalysts to drive the stock significantly higher or lower. The weekly change provides limited insight for longer-term predictions, thus, a cautious outlook is warranted."
       }
     },
     "RELIANCE": {
@@ -1083,9 +1083,9 @@
       "future_outlook": {
         "prediction": "Neutral",
         "expected_change_6m": "-2% to +5%",
-        "expected_change_1y": "+3% to +10%",
-        "confidence": "Medium",
-        "reasoning": "The technical signal is neutral, indicating a lack of strong directional bias. The RSI of 62.95 suggests the stock is neither overbought nor oversold. With no significant recent news, the price is likely to trade sideways with moderate gains possible over the longer term."
+        "expected_change_1y": "0% to +10%",
+        "confidence": "Low",
+        "reasoning": "The technical summary indicates a neutral signal with a moderate RSI. The absence of recent news limits the ability to form a strong opinion. The expected change is therefore conservative given a lack of catalysts, with slight upside potential based on the positive weekly change."
       }
     },
     "TCS": {
@@ -1194,10 +1194,10 @@
       },
       "future_outlook": {
         "prediction": "Neutral",
-        "expected_change_6m": "0% to +5%",
-        "expected_change_1y": "+5% to +10%",
+        "expected_change_6m": "-2% to +5%",
+        "expected_change_1y": "0% to +10%",
         "confidence": "Low",
-        "reasoning": "The technical summary indicates a neutral signal. Lack of recent news makes it difficult to predict a strong directional move. The RSI of 53.05 suggests neither overbought nor oversold conditions, supporting a sideways trend with potential for slight gains. The weekly change of 3.16% indicates recent positive movement, however, more data is needed for a strong conviction."
+        "reasoning": "The technical summary indicates a neutral signal and a weekly change of 3.16%, suggesting consolidation. The lack of significant recent news provides limited catalysts for substantial price movement. The low RSI of 53.05 indicates the stock is neither overbought nor oversold. Overall, with no clear positive or negative drivers, the price is expected to trade sideways with possible slight upside."
       }
     },
     "ICICIBANK": {
@@ -1213,9 +1213,9 @@
           "ratio": 0.72
         },
         "price_levels": {
-          "high_52w": 1452.4,
+          "high_52w": 1447.8,
           "low_52w": 1317.4,
-          "distance_from_high": -5.47,
+          "distance_from_high": -5.17,
           "distance_from_low": 4.22
         },
         "historical_closes": [
@@ -1307,9 +1307,9 @@
       "future_outlook": {
         "prediction": "Neutral",
         "expected_change_6m": "-2% to +5%",
-        "expected_change_1y": "+0% to +10%",
+        "expected_change_1y": "+2% to +10%",
         "confidence": "Low",
-        "reasoning": "The technical summary indicates a neutral signal and a low score, suggesting indecision in the stock's movement. The weekly change is positive, but the RSI is near neutral territory (48.49). With no recent news, there are no immediate catalysts to drive significant price changes, leading to a cautiously optimistic outlook."
+        "reasoning": "The technical summary indicates a neutral signal with a low score and RSI near neutral territory. The absence of recent news suggests a lack of catalysts for significant price movement. Given the mixed technicals and lack of news, a sideways trend with potential modest gains is expected."
       }
     },
     "ITC": {
@@ -1427,7 +1427,7 @@
         "expected_change_6m": "-2% to +5%",
         "expected_change_1y": "0% to +10%",
         "confidence": "Low",
-        "reasoning": "The technical summary shows a neutral signal and an RSI of 31.56, suggesting the stock may be nearing oversold territory. The absence of significant news provides limited directional cues. Without catalysts, the stock is likely to trade sideways, with potential for slight gains."
+        "reasoning": "The technical summary indicates a neutral signal and a low RSI, suggesting potential for sideways movement or slight upside. Absence of recent news provides little catalyst. The lack of significant positive or negative indicators suggests a cautious outlook."
       }
     },
     "SBIN": {
@@ -1545,7 +1545,7 @@
         "expected_change_6m": "0% to +5%",
         "expected_change_1y": "+5% to +10%",
         "confidence": "Low",
-        "reasoning": "The technical summary indicates a neutral signal with a high RSI suggesting potential overbought conditions. The lack of recent news limits visibility on potential catalysts. The price may consolidate, or experience modest gains given the lack of news."
+        "reasoning": "The technical summary indicates a neutral signal with a high RSI suggesting overbought conditions. The lack of recent news makes it difficult to assess catalysts for significant price movement. The weekly change is marginal, contributing to a cautious outlook and limited upside potential for SBIN."
       }
     },
     "LT": {
@@ -1657,7 +1657,7 @@
         "expected_change_6m": "-2% to +5%",
         "expected_change_1y": "0% to +10%",
         "confidence": "Low",
-        "reasoning": "The technical signal is neutral, and the weekly change is positive but not significantly strong. The RSI suggests neither overbought nor oversold conditions. The lack of recent news makes it difficult to predict a clear trend. The absence of specific catalysts limits any strong directional expectations."
+        "reasoning": "The technical summary indicates a neutral signal and a score of 2, suggesting neither strong bullish nor bearish momentum. Absence of recent news provides limited catalysts for significant price movement. The RSI is relatively neutral at 59.84, further supporting a sideways trend with minimal volatility."
       }
     },
     "AXISBANK": {
@@ -1772,13 +1772,13 @@
       },
       "future_outlook": {
         "prediction": "Neutral",
-        "expected_change_6m": "-2% to +5%",
-        "expected_change_1y": "+3% to +10%",
-        "confidence": "Low",
-        "reasoning": "The technical summary indicates a neutral signal and low score. The RSI suggests the stock is neither overbought nor oversold. Absence of significant news flow suggests a period of consolidation. Therefore, a modest positive or neutral outlook is expected."
+        "expected_change_6m": "0% to +5%",
+        "expected_change_1y": "+5% to +10%",
+        "confidence": "Medium",
+        "reasoning": "The technical summary indicates a neutral signal and a low RSI, suggesting neither strong buying nor selling pressure. The lack of recent news provides little catalyst for significant price movement. Therefore, we anticipate modest growth given the current market conditions and existing valuation."
       }
     }
   },
-  "forecast_time": "2025-11-16T06:29:45.270641",
-  "last_run": "2025-11-16T06:29:47.330899"
+  "forecast_time": "2025-11-17T06:32:58.797205",
+  "last_run": "2025-11-17T06:33:00.869037"
 }
